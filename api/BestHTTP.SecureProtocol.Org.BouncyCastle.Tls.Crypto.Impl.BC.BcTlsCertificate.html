@@ -1,0 +1,654 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class BcTlsCertificate
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class BcTlsCertificate
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate">
+
+
+  <h1 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate" class="text-break">Class BcTlsCertificate
+</h1>
+  <div class="markdown level0 summary"><p>Implementation class for a single X.509 certificate based on the BC light-weight API.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html">BcTlsRawKeyCertificate</a></div>
+    <div class="level2"><span class="xref">BcTlsCertificate</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCertificate.html">TlsCertificate</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_m_crypto">BcTlsRawKeyCertificate.m_crypto</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_m_keyInfo">BcTlsRawKeyCertificate.m_keyInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_m_pubKeyDH">BcTlsRawKeyCertificate.m_pubKeyDH</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_m_pubKeyEC">BcTlsRawKeyCertificate.m_pubKeyEC</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_m_pubKeyEd25519">BcTlsRawKeyCertificate.m_pubKeyEd25519</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_m_pubKeyEd448">BcTlsRawKeyCertificate.m_pubKeyEd448</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_m_pubKeyRsa">BcTlsRawKeyCertificate.m_pubKeyRsa</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_SubjectPublicKeyInfo">BcTlsRawKeyCertificate.SubjectPublicKeyInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_CreateEncryptor_System_Int32_">BcTlsRawKeyCertificate.CreateEncryptor(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_CreateVerifier_System_Int16_">BcTlsRawKeyCertificate.CreateVerifier(short)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_CreateVerifier_System_Int32_">BcTlsRawKeyCertificate.CreateVerifier(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_GetLegacySignatureAlgorithm">BcTlsRawKeyCertificate.GetLegacySignatureAlgorithm()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_GetPubKeyDH">BcTlsRawKeyCertificate.GetPubKeyDH()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_GetPubKeyDss">BcTlsRawKeyCertificate.GetPubKeyDss()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_GetPubKeyEC">BcTlsRawKeyCertificate.GetPubKeyEC()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_GetPubKeyEd25519">BcTlsRawKeyCertificate.GetPubKeyEd25519()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_GetPubKeyEd448">BcTlsRawKeyCertificate.GetPubKeyEd448()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_GetPubKeyRsa">BcTlsRawKeyCertificate.GetPubKeyRsa()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_SupportsSignatureAlgorithm_System_Int16_">BcTlsRawKeyCertificate.SupportsSignatureAlgorithm(short)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_SupportsSignatureAlgorithmCA_System_Int16_">BcTlsRawKeyCertificate.SupportsSignatureAlgorithmCA(short)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_CheckUsageInRole_System_Int32_">BcTlsRawKeyCertificate.CheckUsageInRole(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_GetPublicKey">BcTlsRawKeyCertificate.GetPublicKey()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_SupportsRsa_Pkcs1">BcTlsRawKeyCertificate.SupportsRsa_Pkcs1()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_SupportsRsa_Pss_Pss_System_Int16_">BcTlsRawKeyCertificate.SupportsRsa_Pss_Pss(short)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_SupportsRsa_Pss_Rsae">BcTlsRawKeyCertificate.SupportsRsa_Pss_Rsae()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_SupportsSignatureAlgorithm_System_Int16_System_Int32_">BcTlsRawKeyCertificate.SupportsSignatureAlgorithm(short, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_ValidateKeyUsage_System_Int32_">BcTlsRawKeyCertificate.ValidateKeyUsage(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_ValidateRsa_Pkcs1">BcTlsRawKeyCertificate.ValidateRsa_Pkcs1()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_ValidateRsa_Pss_Pss_System_Int16_">BcTlsRawKeyCertificate.ValidateRsa_Pss_Pss(short)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_ValidateRsa_Pss_Rsae">BcTlsRawKeyCertificate.ValidateRsa_Pss_Rsae()</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.html">BestHTTP</a>.<span class="xref">SecureProtocol</span>.<span class="xref">Org</span>.<span class="xref">BouncyCastle</span>.<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.html">Tls</a>.<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.html">Crypto</a>.<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.html">Impl</a>.<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.html">BC</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BcTlsCertificate : BcTlsRawKeyCertificate, TlsCertificate</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate__ctor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.#ctor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate__ctor_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.#ctor(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto,System.Byte[])">BcTlsCertificate(BcTlsCrypto, byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BcTlsCertificate(BcTlsCrypto crypto, byte[] encoding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.html">BcTlsCrypto</a></td>
+        <td><span class="parametername">crypto</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">encoding</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate__ctor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.#ctor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate__ctor_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_X509CertificateStructure_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.#ctor(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto,X509CertificateStructure)">BcTlsCertificate(BcTlsCrypto, X509CertificateStructure)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BcTlsCertificate(BcTlsCrypto crypto, X509CertificateStructure certificate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.html">BcTlsCrypto</a></td>
+        <td><span class="parametername">crypto</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">X509CertificateStructure</span></td>
+        <td><span class="parametername">certificate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_m_certificate" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.m_certificate">m_certificate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly X509CertificateStructure m_certificate</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">X509CertificateStructure</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_SerialNumber_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.SerialNumber*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_SerialNumber" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.SerialNumber">SerialNumber</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override BigInteger SerialNumber { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BigInteger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_SerialNumber">BcTlsRawKeyCertificate.SerialNumber</a></div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_SigAlgOid_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.SigAlgOid*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_SigAlgOid" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.SigAlgOid">SigAlgOid</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string SigAlgOid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_SigAlgOid">BcTlsRawKeyCertificate.SigAlgOid</a></div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_X509CertificateStructure_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.X509CertificateStructure*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_X509CertificateStructure" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.X509CertificateStructure">X509CertificateStructure</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual X509CertificateStructure X509CertificateStructure { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">X509CertificateStructure</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_Convert_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.Convert*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_Convert_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCrypto_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCertificate_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.Convert(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto,BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCertificate)">Convert(BcTlsCrypto, TlsCertificate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BcTlsCertificate Convert(BcTlsCrypto crypto, TlsCertificate certificate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCrypto.html">BcTlsCrypto</a></td>
+        <td><span class="parametername">crypto</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCertificate.html">TlsCertificate</a></td>
+        <td><span class="parametername">certificate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.html">BcTlsCertificate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_GetEncoded_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.GetEncoded*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_GetEncoded" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.GetEncoded">GetEncoded()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override byte[] GetEncoded()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_GetEncoded">BcTlsRawKeyCertificate.GetEncoded()</a></div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_GetExtension_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.GetExtension*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_GetExtension_DerObjectIdentifier_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.GetExtension(DerObjectIdentifier)">GetExtension(DerObjectIdentifier)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override byte[] GetExtension(DerObjectIdentifier extensionOid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DerObjectIdentifier</span></td>
+        <td><span class="parametername">extensionOid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_GetExtension_DerObjectIdentifier_">BcTlsRawKeyCertificate.GetExtension(DerObjectIdentifier)</a></div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_GetSigAlgParams_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.GetSigAlgParams*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_GetSigAlgParams" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.GetSigAlgParams">GetSigAlgParams()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Asn1Encodable GetSigAlgParams()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Asn1Encodable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_GetSigAlgParams">BcTlsRawKeyCertificate.GetSigAlgParams()</a></div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_ParseCertificate_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.ParseCertificate*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_ParseCertificate_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.ParseCertificate(System.Byte[])">ParseCertificate(byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static X509CertificateStructure ParseCertificate(byte[] encoding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">encoding</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">X509CertificateStructure</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_SupportsKeyUsage_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.SupportsKeyUsage*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsCertificate_SupportsKeyUsage_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsCertificate.SupportsKeyUsage(System.Int32)">SupportsKeyUsage(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool SupportsKeyUsage(int keyUsageBits)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">keyUsageBits</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.BC.BcTlsRawKeyCertificate.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_BC_BcTlsRawKeyCertificate_SupportsKeyUsage_System_Int32_">BcTlsRawKeyCertificate.SupportsKeyUsage(int)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCertificate.html">TlsCertificate</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

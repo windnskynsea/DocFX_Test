@@ -1,0 +1,1094 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class HTTP2Stream
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class HTTP2Stream
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream">
+
+
+  <h1 id="BestHTTP_Connections_HTTP2_HTTP2Stream" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream" class="text-break">Class HTTP2Stream
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">HTTP2Stream</span></div>
+      <div class="level2"><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2WebSocketStream.html">HTTP2WebSocketStream</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.html">BestHTTP</a>.<a class="xref" href="BestHTTP.Connections.html">Connections</a>.<a class="xref" href="BestHTTP.Connections.HTTP2.html">HTTP2</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_Connections_HTTP2_HTTP2Stream_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HTTP2Stream</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2Stream__ctor_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.#ctor*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream__ctor_System_UInt32_BestHTTP_Connections_HTTP2_HTTP2Handler_BestHTTP_Connections_HTTP2_HTTP2SettingsManager_BestHTTP_Connections_HTTP2_HPACKEncoder_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.#ctor(System.UInt32,BestHTTP.Connections.HTTP2.HTTP2Handler,BestHTTP.Connections.HTTP2.HTTP2SettingsManager,BestHTTP.Connections.HTTP2.HPACKEncoder)">HTTP2Stream(uint, HTTP2Handler, HTTP2SettingsManager, HPACKEncoder)</h4>
+  <div class="markdown level1 summary"><p>Constructor to create a client stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HTTP2Stream(uint id, HTTP2Handler parentHandler, HTTP2SettingsManager registry, HPACKEncoder hpackEncoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Handler.html">HTTP2Handler</a></td>
+        <td><span class="parametername">parentHandler</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2SettingsManager.html">HTTP2SettingsManager</a></td>
+        <td><span class="parametername">registry</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.HPACKEncoder.html">HPACKEncoder</a></td>
+        <td><span class="parametername">hpackEncoder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_dataView" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.dataView">dataView</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected FramesAsStreamView dataView</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.FramesAsStreamView.html">FramesAsStreamView</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_downloaded" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.downloaded">downloaded</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected uint downloaded</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_encoder" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.encoder">encoder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HPACKEncoder encoder</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.HPACKEncoder.html">HPACKEncoder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_headerView" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.headerView">headerView</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected FramesAsStreamView headerView</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.FramesAsStreamView.html">FramesAsStreamView</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_incomingFrames" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.incomingFrames">incomingFrames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Queue&lt;HTTP2FrameHeaderAndPayload&gt; incomingFrames</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Queue&lt;T&gt;</span>&lt;<a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload.html">HTTP2FrameHeaderAndPayload</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_isEndSTRReceived" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.isEndSTRReceived">isEndSTRReceived</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool isEndSTRReceived</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_isRSTFrameSent" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.isRSTFrameSent">isRSTFrameSent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool isRSTFrameSent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_isStreamedDownload" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.isStreamedDownload">isStreamedDownload</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool isStreamedDownload</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_lastReadCount" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.lastReadCount">lastReadCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int lastReadCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_localWindow" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.localWindow">localWindow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected uint localWindow</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_outgoing" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.outgoing">outgoing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Queue&lt;HTTP2FrameHeaderAndPayload&gt; outgoing</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Queue&lt;T&gt;</span>&lt;<a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload.html">HTTP2FrameHeaderAndPayload</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_parent" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.parent">parent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HTTP2Handler parent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Handler.html">HTTP2Handler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_remoteWindow" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.remoteWindow">remoteWindow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected long remoteWindow</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_response" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.response">response</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HTTP2Response response</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Response.html">HTTP2Response</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_sentData" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.sentData">sentData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected uint sentData</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_settings" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.settings">settings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HTTP2SettingsManager settings</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2SettingsManager.html">HTTP2SettingsManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_uploadStreamInfo" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.uploadStreamInfo">uploadStreamInfo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HTTPRequest.UploadStreamInfo uploadStreamInfo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a>.<a class="xref" href="BestHTTP.HTTPRequest.UploadStreamInfo.html">UploadStreamInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_windowUpdateThreshold" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.windowUpdateThreshold">windowUpdateThreshold</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected uint windowUpdateThreshold</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2Stream_AssignedRequest_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.AssignedRequest*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_AssignedRequest" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.AssignedRequest">AssignedRequest</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HTTPRequest AssignedRequest { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2Stream_Context_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.Context*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_Context" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.Context">Context</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LoggingContext Context { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LoggingContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2Stream_HasFrameToSend_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.HasFrameToSend*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_HasFrameToSend" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.HasFrameToSend">HasFrameToSend</h4>
+  <div class="markdown level1 summary"><p>This flag is checked by the connection to decide whether to do a new processing-frame sending round before sleeping until new data arrives</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool HasFrameToSend { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2Stream_Id_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.Id*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_Id" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.Id">Id</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2Stream_NextInteraction_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.NextInteraction*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_NextInteraction" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.NextInteraction">NextInteraction</h4>
+  <div class="markdown level1 summary"><p>Next interaction scheduled by the stream relative to <em>now</em>. Its default is TimeSpan.MaxValue == no interaction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TimeSpan NextInteraction { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2Stream_State_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.State*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_State" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.State">State</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HTTP2StreamStates State { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2StreamStates.html">HTTP2StreamStates</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2Stream_Abort_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.Abort*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_Abort_System_String_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.Abort(System.String)">Abort(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Abort(string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2Stream_AddFrame_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.AddFrame*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_AddFrame_BestHTTP_Connections_HTTP2_HTTP2FrameHeaderAndPayload_System_Collections_Generic_List_BestHTTP_Connections_HTTP2_HTTP2FrameHeaderAndPayload__" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.AddFrame(BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload,System.Collections.Generic.List{BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload})">AddFrame(HTTP2FrameHeaderAndPayload, List&lt;HTTP2FrameHeaderAndPayload&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddFrame(HTTP2FrameHeaderAndPayload frame, List&lt;HTTP2FrameHeaderAndPayload&gt; outgoingFrames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload.html">HTTP2FrameHeaderAndPayload</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload.html">HTTP2FrameHeaderAndPayload</a>&gt;</td>
+        <td><span class="parametername">outgoingFrames</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2Stream_Assign_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.Assign*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_Assign_BestHTTP_HTTPRequest_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.Assign(BestHTTP.HTTPRequest)">Assign(HTTPRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Assign(HTTPRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2Stream_FinishRequest_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.FinishRequest*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_FinishRequest_BestHTTP_Connections_HTTP2_HTTP2Stream_BestHTTP_Connections_HTTP2_FramesAsStreamView_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.FinishRequest(BestHTTP.Connections.HTTP2.HTTP2Stream,BestHTTP.Connections.HTTP2.FramesAsStreamView)">FinishRequest(HTTP2Stream, FramesAsStreamView)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void FinishRequest(HTTP2Stream stream, FramesAsStreamView dataStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html">HTTP2Stream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.FramesAsStreamView.html">FramesAsStreamView</a></td>
+        <td><span class="parametername">dataStream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2Stream_OnRemoteSettingChanged_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.OnRemoteSettingChanged*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_OnRemoteSettingChanged_BestHTTP_Connections_HTTP2_HTTP2SettingsRegistry_BestHTTP_Connections_HTTP2_HTTP2Settings_System_UInt32_System_UInt32_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.OnRemoteSettingChanged(BestHTTP.Connections.HTTP2.HTTP2SettingsRegistry,BestHTTP.Connections.HTTP2.HTTP2Settings,System.UInt32,System.UInt32)">OnRemoteSettingChanged(HTTP2SettingsRegistry, HTTP2Settings, uint, uint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnRemoteSettingChanged(HTTP2SettingsRegistry registry, HTTP2Settings setting, uint oldValue, uint newValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2SettingsRegistry.html">HTTP2SettingsRegistry</a></td>
+        <td><span class="parametername">registry</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Settings.html">HTTP2Settings</a></td>
+        <td><span class="parametername">setting</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">oldValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2Stream_Process_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.Process*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_Process_System_Collections_Generic_List_BestHTTP_Connections_HTTP2_HTTP2FrameHeaderAndPayload__" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.Process(System.Collections.Generic.List{BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload})">Process(List&lt;HTTP2FrameHeaderAndPayload&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Process(List&lt;HTTP2FrameHeaderAndPayload&gt; outgoingFrames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload.html">HTTP2FrameHeaderAndPayload</a>&gt;</td>
+        <td><span class="parametername">outgoingFrames</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2Stream_ProcessIncomingDATAFrame_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.ProcessIncomingDATAFrame*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_ProcessIncomingDATAFrame_BestHTTP_Connections_HTTP2_HTTP2FrameHeaderAndPayload__System_UInt32__" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.ProcessIncomingDATAFrame(BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload@,System.UInt32@)">ProcessIncomingDATAFrame(ref HTTP2FrameHeaderAndPayload, ref uint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessIncomingDATAFrame(ref HTTP2FrameHeaderAndPayload frame, ref uint windowUpdate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload.html">HTTP2FrameHeaderAndPayload</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">windowUpdate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2Stream_ProcessIncomingFrames_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.ProcessIncomingFrames*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_ProcessIncomingFrames_System_Collections_Generic_List_BestHTTP_Connections_HTTP2_HTTP2FrameHeaderAndPayload__" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.ProcessIncomingFrames(System.Collections.Generic.List{BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload})">ProcessIncomingFrames(List&lt;HTTP2FrameHeaderAndPayload&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ProcessIncomingFrames(List&lt;HTTP2FrameHeaderAndPayload&gt; outgoingFrames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload.html">HTTP2FrameHeaderAndPayload</a>&gt;</td>
+        <td><span class="parametername">outgoingFrames</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2Stream_ProcessOpenState_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.ProcessOpenState*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_ProcessOpenState_System_Collections_Generic_List_BestHTTP_Connections_HTTP2_HTTP2FrameHeaderAndPayload__" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.ProcessOpenState(System.Collections.Generic.List{BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload})">ProcessOpenState(List&lt;HTTP2FrameHeaderAndPayload&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessOpenState(List&lt;HTTP2FrameHeaderAndPayload&gt; outgoingFrames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload.html">HTTP2FrameHeaderAndPayload</a>&gt;</td>
+        <td><span class="parametername">outgoingFrames</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2Stream_ProcessState_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.ProcessState*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_ProcessState_System_Collections_Generic_List_BestHTTP_Connections_HTTP2_HTTP2FrameHeaderAndPayload__" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.ProcessState(System.Collections.Generic.List{BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload})">ProcessState(List&lt;HTTP2FrameHeaderAndPayload&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ProcessState(List&lt;HTTP2FrameHeaderAndPayload&gt; outgoingFrames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload.html">HTTP2FrameHeaderAndPayload</a>&gt;</td>
+        <td><span class="parametername">outgoingFrames</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2Stream_Removed_" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.Removed*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2Stream_Removed" data-uid="BestHTTP.Connections.HTTP2.HTTP2Stream.Removed">Removed()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Removed()</code></pre>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

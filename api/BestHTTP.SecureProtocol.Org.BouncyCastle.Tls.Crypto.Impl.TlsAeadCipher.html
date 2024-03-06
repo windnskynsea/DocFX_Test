@@ -1,0 +1,1014 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class TlsAeadCipher
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class TlsAeadCipher
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher">
+
+
+  <h1 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher" class="text-break">Class TlsAeadCipher
+</h1>
+  <div class="markdown level0 summary"><p>A generic TLS 1.2 AEAD cipher.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">TlsAeadCipher</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCipher.html">TlsCipher</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.html">BestHTTP</a>.<span class="xref">SecureProtocol</span>.<span class="xref">Org</span>.<span class="xref">BouncyCastle</span>.<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.html">Tls</a>.<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.html">Crypto</a>.<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.html">Impl</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TlsAeadCipher : TlsCipher</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher__ctor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.#ctor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher__ctor_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCryptoParameters_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipherImpl_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipherImpl_System_Int32_System_Int32_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.#ctor(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters,BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipherImpl,BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipherImpl,System.Int32,System.Int32,System.Int32)">TlsAeadCipher(TlsCryptoParameters, TlsAeadCipherImpl, TlsAeadCipherImpl, int, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TlsAeadCipher(TlsCryptoParameters cryptoParams, TlsAeadCipherImpl encryptCipher, TlsAeadCipherImpl decryptCipher, int keySize, int macSize, int aeadType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></td>
+        <td><span class="parametername">cryptoParams</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipherImpl.html">TlsAeadCipherImpl</a></td>
+        <td><span class="parametername">encryptCipher</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipherImpl.html">TlsAeadCipherImpl</a></td>
+        <td><span class="parametername">decryptCipher</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">keySize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">macSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">aeadType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_AEAD_CCM" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.AEAD_CCM">AEAD_CCM</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int AEAD_CCM = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_AEAD_CHACHA20_POLY1305" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.AEAD_CHACHA20_POLY1305">AEAD_CHACHA20_POLY1305</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int AEAD_CHACHA20_POLY1305 = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_AEAD_GCM" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.AEAD_GCM">AEAD_GCM</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int AEAD_GCM = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_m_cryptoParams" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.m_cryptoParams">m_cryptoParams</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TlsCryptoParameters m_cryptoParams</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_m_decryptCipher" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.m_decryptCipher">m_decryptCipher</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TlsAeadCipherImpl m_decryptCipher</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipherImpl.html">TlsAeadCipherImpl</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_m_decryptNonce" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.m_decryptNonce">m_decryptNonce</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly byte[] m_decryptNonce</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_m_encryptCipher" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.m_encryptCipher">m_encryptCipher</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TlsAeadCipherImpl m_encryptCipher</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipherImpl.html">TlsAeadCipherImpl</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_m_encryptNonce" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.m_encryptNonce">m_encryptNonce</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly byte[] m_encryptNonce</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_m_fixed_iv_length" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.m_fixed_iv_length">m_fixed_iv_length</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly int m_fixed_iv_length</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_m_isTlsV13" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.m_isTlsV13">m_isTlsV13</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly bool m_isTlsV13</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_m_keySize" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.m_keySize">m_keySize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly int m_keySize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_m_macSize" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.m_macSize">m_macSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly int m_macSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_m_nonceMode" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.m_nonceMode">m_nonceMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly int m_nonceMode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_m_record_iv_length" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.m_record_iv_length">m_record_iv_length</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly int m_record_iv_length</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_UsesOpaqueRecordType_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.UsesOpaqueRecordType*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_UsesOpaqueRecordType" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.UsesOpaqueRecordType">UsesOpaqueRecordType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool UsesOpaqueRecordType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_DecodeCiphertext_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.DecodeCiphertext*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_DecodeCiphertext_System_Int64_System_Int16_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_ProtocolVersion_System_Byte___System_Int32_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.DecodeCiphertext(System.Int64,System.Int16,BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.ProtocolVersion,System.Byte[],System.Int32,System.Int32)">DecodeCiphertext(long, short, ProtocolVersion, byte[], int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TlsDecodeResult DecodeCiphertext(long seqNo, short recordType, ProtocolVersion recordVersion, byte[] ciphertext, int ciphertextOffset, int ciphertextLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">seqNo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td><span class="parametername">recordType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a></td>
+        <td><span class="parametername">recordVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">ciphertext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">ciphertextOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">ciphertextLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsDecodeResult.html">TlsDecodeResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_EncodePlaintext_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.EncodePlaintext*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_EncodePlaintext_System_Int64_System_Int16_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_ProtocolVersion_System_Int32_System_Byte___System_Int32_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.EncodePlaintext(System.Int64,System.Int16,BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.ProtocolVersion,System.Int32,System.Byte[],System.Int32,System.Int32)">EncodePlaintext(long, short, ProtocolVersion, int, byte[], int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TlsEncodeResult EncodePlaintext(long seqNo, short contentType, ProtocolVersion recordVersion, int headerAllocation, byte[] plaintext, int plaintextOffset, int plaintextLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">seqNo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td><span class="parametername">contentType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a></td>
+        <td><span class="parametername">recordVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">headerAllocation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">plaintext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">plaintextOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">plaintextLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsEncodeResult.html">TlsEncodeResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_GetAdditionalData_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.GetAdditionalData*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_GetAdditionalData_System_Int64_System_Int16_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_ProtocolVersion_System_Int32_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.GetAdditionalData(System.Int64,System.Int16,BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.ProtocolVersion,System.Int32,System.Int32)">GetAdditionalData(long, short, ProtocolVersion, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual byte[] GetAdditionalData(long seqNo, short recordType, ProtocolVersion recordVersion, int ciphertextLength, int plaintextLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">seqNo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td><span class="parametername">recordType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a></td>
+        <td><span class="parametername">recordVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">ciphertextLength</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">plaintextLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_GetCiphertextDecodeLimit_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.GetCiphertextDecodeLimit*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_GetCiphertextDecodeLimit_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.GetCiphertextDecodeLimit(System.Int32)">GetCiphertextDecodeLimit(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetCiphertextDecodeLimit(int plaintextLimit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">plaintextLimit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_GetCiphertextEncodeLimit_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.GetCiphertextEncodeLimit*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_GetCiphertextEncodeLimit_System_Int32_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.GetCiphertextEncodeLimit(System.Int32,System.Int32)">GetCiphertextEncodeLimit(int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetCiphertextEncodeLimit(int plaintextLength, int plaintextLimit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">plaintextLength</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">plaintextLimit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_GetPlaintextLimit_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.GetPlaintextLimit*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_GetPlaintextLimit_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.GetPlaintextLimit(System.Int32)">GetPlaintextLimit(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetPlaintextLimit(int ciphertextLimit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">ciphertextLimit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_RekeyCipher_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.RekeyCipher*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_RekeyCipher_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_SecurityParameters_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipherImpl_System_Byte___System_Boolean_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.RekeyCipher(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.SecurityParameters,BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipherImpl,System.Byte[],System.Boolean)">RekeyCipher(SecurityParameters, TlsAeadCipherImpl, byte[], bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RekeyCipher(SecurityParameters securityParameters, TlsAeadCipherImpl cipher, byte[] nonce, bool serverSecret)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.SecurityParameters.html">SecurityParameters</a></td>
+        <td><span class="parametername">securityParameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipherImpl.html">TlsAeadCipherImpl</a></td>
+        <td><span class="parametername">cipher</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">nonce</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">serverSecret</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_RekeyDecoder_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.RekeyDecoder*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_RekeyDecoder" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.RekeyDecoder">RekeyDecoder()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RekeyDecoder()</code></pre>
+  </div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_RekeyEncoder_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.RekeyEncoder*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_RekeyEncoder" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.RekeyEncoder">RekeyEncoder()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RekeyEncoder()</code></pre>
+  </div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_Setup13Cipher_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.Setup13Cipher*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipher_Setup13Cipher_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsAeadCipherImpl_System_Byte___BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsSecret_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipher.Setup13Cipher(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipherImpl,System.Byte[],BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsSecret,System.Int32)">Setup13Cipher(TlsAeadCipherImpl, byte[], TlsSecret, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Setup13Cipher(TlsAeadCipherImpl cipher, byte[] nonce, TlsSecret secret, int cryptoHashAlgorithm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsAeadCipherImpl.html">TlsAeadCipherImpl</a></td>
+        <td><span class="parametername">cipher</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">nonce</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></td>
+        <td><span class="parametername">secret</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">cryptoHashAlgorithm</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCipher.html">TlsCipher</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

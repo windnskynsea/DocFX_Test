@@ -1,0 +1,610 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class TlsSuiteHmac
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class TlsSuiteHmac
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac">
+
+
+  <h1 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac" class="text-break">Class TlsSuiteHmac
+</h1>
+  <div class="markdown level0 summary"><p>A generic TLS MAC implementation, acting as an HMAC based on some underlying Digest.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">TlsSuiteHmac</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteMac.html">TlsSuiteMac</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.html">BestHTTP</a>.<span class="xref">SecureProtocol</span>.<span class="xref">Org</span>.<span class="xref">BouncyCastle</span>.<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.html">Tls</a>.<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.html">Crypto</a>.<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.html">Impl</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TlsSuiteHmac : TlsSuiteMac</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac__ctor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.#ctor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac__ctor_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCryptoParameters_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsHmac_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.#ctor(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters,BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsHmac)">TlsSuiteHmac(TlsCryptoParameters, TlsHmac)</h4>
+  <div class="markdown level1 summary"><p>Generate a new instance of a TlsMac.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TlsSuiteHmac(TlsCryptoParameters cryptoParams, TlsHmac mac)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></td>
+        <td><span class="parametername">cryptoParams</span></td>
+        <td><p>the TLS client context specific crypto parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsHmac.html">TlsHmac</a></td>
+        <td><span class="parametername">mac</span></td>
+        <td><p>The MAC to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac_m_cryptoParams" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.m_cryptoParams">m_cryptoParams</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TlsCryptoParameters m_cryptoParams</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac_m_digestBlockSize" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.m_digestBlockSize">m_digestBlockSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly int m_digestBlockSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac_m_digestOverhead" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.m_digestOverhead">m_digestOverhead</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly int m_digestOverhead</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac_m_mac" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.m_mac">m_mac</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TlsHmac m_mac</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsHmac.html">TlsHmac</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac_m_macSize" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.m_macSize">m_macSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly int m_macSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac_Size_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.Size*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac_Size" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.Size">Size</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Size { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac_CalculateMac_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.CalculateMac*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac_CalculateMac_System_Int64_System_Int16_System_Byte___System_Int32_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.CalculateMac(System.Int64,System.Int16,System.Byte[],System.Int32,System.Int32)">CalculateMac(long, short, byte[], int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] CalculateMac(long seqNo, short type, byte[] msg, int msgOff, int msgLen)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">seqNo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">msg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">msgOff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">msgLen</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac_CalculateMacConstantTime_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.CalculateMacConstantTime*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac_CalculateMacConstantTime_System_Int64_System_Int16_System_Byte___System_Int32_System_Int32_System_Int32_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.CalculateMacConstantTime(System.Int64,System.Int16,System.Byte[],System.Int32,System.Int32,System.Int32,System.Byte[])">CalculateMacConstantTime(long, short, byte[], int, int, int, byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] CalculateMacConstantTime(long seqNo, short type, byte[] msg, int msgOff, int msgLen, int fullLength, byte[] dummyData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">seqNo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">msg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">msgOff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">msgLen</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">fullLength</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">dummyData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac_GetDigestBlockCount_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.GetDigestBlockCount*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac_GetDigestBlockCount_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.GetDigestBlockCount(System.Int32)">GetDigestBlockCount(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int GetDigestBlockCount(int inputLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">inputLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac_GetMacSize_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.GetMacSize*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac_GetMacSize_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCryptoParameters_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsMac_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.GetMacSize(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters,BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsMac)">GetMacSize(TlsCryptoParameters, TlsMac)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static int GetMacSize(TlsCryptoParameters cryptoParams, TlsMac mac)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></td>
+        <td><span class="parametername">cryptoParams</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsMac.html">TlsMac</a></td>
+        <td><span class="parametername">mac</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac_Truncate_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.Truncate*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_Impl_TlsSuiteHmac_Truncate_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteHmac.Truncate(System.Byte[])">Truncate(byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual byte[] Truncate(byte[] bs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">bs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.Impl.TlsSuiteMac.html">TlsSuiteMac</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

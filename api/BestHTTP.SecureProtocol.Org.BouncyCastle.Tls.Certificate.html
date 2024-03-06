@@ -1,0 +1,770 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Certificate
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Certificate
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate">
+
+
+  <h1 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate" class="text-break">Class Certificate
+</h1>
+  <div class="markdown level0 summary"><p>Parsing and encoding of a <em>Certificate</em> struct from RFC 4346.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">Certificate</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.html">BestHTTP</a>.<span class="xref">SecureProtocol</span>.<span class="xref">Org</span>.<span class="xref">BouncyCastle</span>.<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.html">Tls</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Certificate</code></pre>
+  </div>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><pre>
+opaque ASN.1Cert&lt;2^24-1>;
+struct {
+  ASN.1Cert certificate_list&lt;0..2^24-1>;
+} Certificate;
+</pre>
+</div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate__ctor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.#ctor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate__ctor_System_Byte___BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_CertificateEntry___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.#ctor(System.Byte[],BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.CertificateEntry[])">Certificate(byte[], CertificateEntry[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Certificate(byte[] certificateRequestContext, CertificateEntry[] certificateEntryList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">certificateRequestContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.CertificateEntry.html">CertificateEntry</a>[]</td>
+        <td><span class="parametername">certificateEntryList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate__ctor_System_Byte___BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_CertificateEntry____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre>
+opaque ASN.1Cert&lt;2^24-1>;
+struct {
+  ASN.1Cert certificate_list&lt;0..2^24-1>;
+} Certificate;
+</pre>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate__ctor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.#ctor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate__ctor_System_Int16_System_Byte___BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_CertificateEntry___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.#ctor(System.Int16,System.Byte[],BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.CertificateEntry[])">Certificate(short, byte[], CertificateEntry[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Certificate(short certificateType, byte[] certificateRequestContext, CertificateEntry[] certificateEntryList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td><span class="parametername">certificateType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">certificateRequestContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.CertificateEntry.html">CertificateEntry</a>[]</td>
+        <td><span class="parametername">certificateEntryList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate__ctor_System_Int16_System_Byte___BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_CertificateEntry____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre>
+opaque ASN.1Cert&lt;2^24-1>;
+struct {
+  ASN.1Cert certificate_list&lt;0..2^24-1>;
+} Certificate;
+</pre>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate__ctor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.#ctor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate__ctor_TlsCertificate___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.#ctor(TlsCertificate[])">Certificate(TlsCertificate[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Certificate(TlsCertificate[] certificateList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsCertificate</span>[]</td>
+        <td><span class="parametername">certificateList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate__ctor_TlsCertificate____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre>
+opaque ASN.1Cert&lt;2^24-1>;
+struct {
+  ASN.1Cert certificate_list&lt;0..2^24-1>;
+} Certificate;
+</pre>
+</div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_EmptyChain" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.EmptyChain">EmptyChain</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Certificate EmptyChain</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.html">Certificate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_EmptyChain_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre>
+opaque ASN.1Cert&lt;2^24-1>;
+struct {
+  ASN.1Cert certificate_list&lt;0..2^24-1>;
+} Certificate;
+</pre>
+</div>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_EmptyChainTls13" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.EmptyChainTls13">EmptyChainTls13</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Certificate EmptyChainTls13</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.html">Certificate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_EmptyChainTls13_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre>
+opaque ASN.1Cert&lt;2^24-1>;
+struct {
+  ASN.1Cert certificate_list&lt;0..2^24-1>;
+} Certificate;
+</pre>
+</div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_CertificateType_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.CertificateType*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_CertificateType" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.CertificateType">CertificateType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short CertificateType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_CertificateType_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre>
+opaque ASN.1Cert&lt;2^24-1>;
+struct {
+  ASN.1Cert certificate_list&lt;0..2^24-1>;
+} Certificate;
+</pre>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_IsEmpty_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.IsEmpty*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_IsEmpty" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p><code>true</code> if this certificate chain contains no certificates, or <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_IsEmpty_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre>
+opaque ASN.1Cert&lt;2^24-1>;
+struct {
+  ASN.1Cert certificate_list&lt;0..2^24-1>;
+} Certificate;
+</pre>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_Length_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.Length*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_Length" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.Length">Length</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_Length_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre>
+opaque ASN.1Cert&lt;2^24-1>;
+struct {
+  ASN.1Cert certificate_list&lt;0..2^24-1>;
+} Certificate;
+</pre>
+</div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_Encode_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.Encode*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_Encode_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_Stream_Stream_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.Encode(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext,Stream,Stream)">Encode(TlsContext, Stream, Stream)</h4>
+  <div class="markdown level1 summary"><p>Encode this <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.html">Certificate</a> to a <see cref="!:Stream"></see>, and optionally calculate the
+&quot;end point hash&quot; (per RFC 5929's tls-server-end-point binding).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Encode(TlsContext context, Stream messageOutput, Stream endPointHashOutput)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.html">TlsContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>the <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.html">TlsContext</a> of the current connection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">messageOutput</span></td>
+        <td><p>the <see cref="!:Stream"></see> to encode to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">endPointHashOutput</span></td>
+        <td><p>the <see cref="!:Stream"></see> to write the &quot;end point hash&quot; to (or null).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_Encode_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_Stream_Stream__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre>
+opaque ASN.1Cert&lt;2^24-1>;
+struct {
+  ASN.1Cert certificate_list&lt;0..2^24-1>;
+} Certificate;
+</pre>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_GetCertificateAt_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.GetCertificateAt*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_GetCertificateAt_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.GetCertificateAt(System.Int32)">GetCertificateAt(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TlsCertificate GetCertificateAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsCertificate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_GetCertificateAt_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre>
+opaque ASN.1Cert&lt;2^24-1>;
+struct {
+  ASN.1Cert certificate_list&lt;0..2^24-1>;
+} Certificate;
+</pre>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_GetCertificateEntryAt_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.GetCertificateEntryAt*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_GetCertificateEntryAt_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.GetCertificateEntryAt(System.Int32)">GetCertificateEntryAt(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateEntry GetCertificateEntryAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.CertificateEntry.html">CertificateEntry</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_GetCertificateEntryAt_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre>
+opaque ASN.1Cert&lt;2^24-1>;
+struct {
+  ASN.1Cert certificate_list&lt;0..2^24-1>;
+} Certificate;
+</pre>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_GetCertificateEntryList_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.GetCertificateEntryList*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_GetCertificateEntryList" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.GetCertificateEntryList">GetCertificateEntryList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateEntry[] GetCertificateEntryList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.CertificateEntry.html">CertificateEntry</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_GetCertificateEntryList_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre>
+opaque ASN.1Cert&lt;2^24-1>;
+struct {
+  ASN.1Cert certificate_list&lt;0..2^24-1>;
+} Certificate;
+</pre>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_GetCertificateList_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.GetCertificateList*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_GetCertificateList" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.GetCertificateList">GetCertificateList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TlsCertificate[] GetCertificateList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsCertificate</span>[]</td>
+        <td><p>an array of <see cref="!:TlsCertificate"></see> representing a certificate chain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_GetCertificateList_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre>
+opaque ASN.1Cert&lt;2^24-1>;
+struct {
+  ASN.1Cert certificate_list&lt;0..2^24-1>;
+} Certificate;
+</pre>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_GetCertificateRequestContext_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.GetCertificateRequestContext*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_GetCertificateRequestContext" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.GetCertificateRequestContext">GetCertificateRequestContext()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetCertificateRequestContext()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_GetCertificateRequestContext_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre>
+opaque ASN.1Cert&lt;2^24-1>;
+struct {
+  ASN.1Cert certificate_list&lt;0..2^24-1>;
+} Certificate;
+</pre>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_Parse_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.Parse*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_Parse_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_ParseOptions_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_Stream_Stream_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.Parse(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.ParseOptions,BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext,Stream,Stream)">Parse(ParseOptions, TlsContext, Stream, Stream)</h4>
+  <div class="markdown level1 summary"><p>Parse a <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.html">Certificate</a> from a <see cref="!:Stream"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Certificate Parse(Certificate.ParseOptions options, TlsContext context, Stream messageInput, Stream endPointHashOutput)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.html">Certificate</a>.<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.ParseOptions.html">ParseOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>the <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.ParseOptions.html">Certificate.ParseOptions</a> to apply during parsing.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.html">TlsContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>the <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.html">TlsContext</a> of the current connection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">messageInput</span></td>
+        <td><p>the <see cref="!:Stream"></see> to parse from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">endPointHashOutput</span></td>
+        <td><p>the <see cref="!:Stream"></see> to write the &quot;end point hash&quot; to (or null).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.html">Certificate</a></td>
+        <td><p>a <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.html">Certificate</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_Parse_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_ParseOptions_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_Stream_Stream__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre>
+opaque ASN.1Cert&lt;2^24-1>;
+struct {
+  ASN.1Cert certificate_list&lt;0..2^24-1>;
+} Certificate;
+</pre>
+</div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

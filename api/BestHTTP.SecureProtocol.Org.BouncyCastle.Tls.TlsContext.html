@@ -1,0 +1,592 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface TlsContext
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface TlsContext
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext">
+
+
+  <h1 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext" class="text-break">Interface TlsContext
+</h1>
+  <div class="markdown level0 summary"><p>Base interface for a TLS context implementation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.html">BestHTTP</a>.<span class="xref">SecureProtocol</span>.<span class="xref">Org</span>.<span class="xref">BouncyCastle</span>.<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.html">Tls</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface TlsContext</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_ClientSupportedVersions_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.ClientSupportedVersions*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_ClientSupportedVersions" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.ClientSupportedVersions">ClientSupportedVersions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ProtocolVersion[] ClientSupportedVersions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_ClientVersion_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.ClientVersion*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_ClientVersion" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.ClientVersion">ClientVersion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ProtocolVersion ClientVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_Crypto_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.Crypto*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_Crypto" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.Crypto">Crypto</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsCrypto Crypto { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsCrypto</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_IsServer_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.IsServer*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_IsServer" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.IsServer">IsServer</h4>
+  <div class="markdown level1 summary"><p>Return true if this context is for a server, false otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsServer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>true for a server based context, false for a client based one.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_NonceGenerator_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.NonceGenerator*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_NonceGenerator" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.NonceGenerator">NonceGenerator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsNonceGenerator NonceGenerator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsNonceGenerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_ResumableSession_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.ResumableSession*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_ResumableSession" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.ResumableSession">ResumableSession</h4>
+  <div class="markdown level1 summary"><p>Used to get the resumable session, if any, used by this connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsSession ResumableSession { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsSession.html">TlsSession</a></td>
+        <td><p>A <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsSession.html">TlsSession</a> representing the resumable session used by this connection, or null if
+no resumable session available.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_ResumableSession_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Only available after the handshake has successfully completed.</p>
+</div>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_ResumableSession_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPeer_NotifyHandshakeComplete">NotifyHandshakeComplete</a>()</div>
+  </div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_RsaPreMasterSecretVersion_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.RsaPreMasterSecretVersion*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_RsaPreMasterSecretVersion" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.RsaPreMasterSecretVersion">RsaPreMasterSecretVersion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ProtocolVersion RsaPreMasterSecretVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_SecurityParameters_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.SecurityParameters*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_SecurityParameters" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.SecurityParameters">SecurityParameters</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">SecurityParameters SecurityParameters { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.SecurityParameters.html">SecurityParameters</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_ServerVersion_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.ServerVersion*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_ServerVersion" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.ServerVersion">ServerVersion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ProtocolVersion ServerVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_Session_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.Session*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_Session" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.Session">Session</h4>
+  <div class="markdown level1 summary"><p>Used to get the session information for this connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsSession Session { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsSession.html">TlsSession</a></td>
+        <td><p>A <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsSession.html">TlsSession</a> representing the session used by this connection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_Session_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Only available after the handshake has successfully completed. Use <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsSession.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsSession_IsResumable">IsResumable</a>
+to find out if the session is resumable.</p>
+</div>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_Session_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPeer_NotifyHandshakeComplete">NotifyHandshakeComplete</a>()</div>
+  </div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_UserObject_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.UserObject*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_UserObject" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.UserObject">UserObject</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object UserObject { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_ExportChannelBinding_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.ExportChannelBinding*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_ExportChannelBinding_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.ExportChannelBinding(System.Int32)">ExportChannelBinding(int)</h4>
+  <div class="markdown level1 summary"><p>Export the value of the specified channel binding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte[] ExportChannelBinding(int channelBinding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">channelBinding</span></td>
+        <td><p>A <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.ChannelBinding.html">ChannelBinding</a> constant specifying the channel binding to
+export.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><p>A copy of the channel binding data as a <code>byte[]</code>, or null if the binding could not be
+determined.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_ExportChannelBinding_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Only available after the handshake has successfully completed.</p>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_ExportEarlyKeyingMaterial_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.ExportEarlyKeyingMaterial*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_ExportEarlyKeyingMaterial_System_String_System_Byte___System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.ExportEarlyKeyingMaterial(System.String,System.Byte[],System.Int32)">ExportEarlyKeyingMaterial(string, byte[], int)</h4>
+  <div class="markdown level1 summary"><p>Export (early data) keying material according to RFC 5705: &quot;Keying Material Exporters for TLS&quot;, as
+updated for TLS 1.3 (RFC 8446).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte[] ExportEarlyKeyingMaterial(string asciiLabel, byte[] context_value, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">asciiLabel</span></td>
+        <td><p>indicates which application will use the exported keys.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">context_value</span></td>
+        <td><p>allows the application using the exporter to mix its own data with the TLS PRF
+for the exporter output.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>the number of bytes to generate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><p>a pseudorandom bit string of 'length' bytes generated from the (exporter_)master_secret.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_ExportEarlyKeyingMaterial_System_String_System_Byte___System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>NOTE: for use in settings where an exporter is needed for 0-RTT data.</p>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_ExportKeyingMaterial_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.ExportKeyingMaterial*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_ExportKeyingMaterial_System_String_System_Byte___System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsContext.ExportKeyingMaterial(System.String,System.Byte[],System.Int32)">ExportKeyingMaterial(string, byte[], int)</h4>
+  <div class="markdown level1 summary"><p>Export keying material according to RFC 5705: &quot;Keying Material Exporters for TLS&quot;, as updated for
+TLS 1.3 (RFC 8446) when negotiated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte[] ExportKeyingMaterial(string asciiLabel, byte[] context_value, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">asciiLabel</span></td>
+        <td><p>indicates which application will use the exported keys.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">context_value</span></td>
+        <td><p>allows the application using the exporter to mix its own data with the TLS PRF
+for the exporter output.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>the number of bytes to generate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><p>a pseudorandom bit string of 'length' bytes generated from the (exporter_)master_secret.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

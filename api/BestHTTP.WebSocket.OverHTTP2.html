@@ -1,0 +1,606 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class OverHTTP2
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class OverHTTP2
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.WebSocket.OverHTTP2">
+
+
+  <h1 id="BestHTTP_WebSocket_OverHTTP2" data-uid="BestHTTP.WebSocket.OverHTTP2" class="text-break">Class OverHTTP2
+</h1>
+  <div class="markdown level0 summary"><p>Implements RFC 8441 (<a href="https://tools.ietf.org/html/rfc8441">https://tools.ietf.org/html/rfc8441</a>) to use Websocket over HTTP/2</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html">WebSocketBaseImplementation</a></div>
+    <div class="level2"><span class="xref">OverHTTP2</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IHeartbeat</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_State">WebSocketBaseImplementation.State</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_InternalRequest">WebSocketBaseImplementation.InternalRequest</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation__internalRequest">WebSocketBaseImplementation._internalRequest</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_LastMessageReceived">WebSocketBaseImplementation.LastMessageReceived</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_Parent">WebSocketBaseImplementation.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_Uri">WebSocketBaseImplementation.Uri</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_Origin">WebSocketBaseImplementation.Origin</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_Protocol">WebSocketBaseImplementation.Protocol</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.html">BestHTTP</a>.<a class="xref" href="BestHTTP.WebSocket.html">WebSocket</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_WebSocket_OverHTTP2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class OverHTTP2 : WebSocketBaseImplementation, IHeartbeat</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="BestHTTP_WebSocket_OverHTTP2__ctor_" data-uid="BestHTTP.WebSocket.OverHTTP2.#ctor*"></a>
+  <h4 id="BestHTTP_WebSocket_OverHTTP2__ctor_BestHTTP_WebSocket_WebSocket_System_Uri_System_String_System_String_" data-uid="BestHTTP.WebSocket.OverHTTP2.#ctor(BestHTTP.WebSocket.WebSocket,System.Uri,System.String,System.String)">OverHTTP2(WebSocket, Uri, string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OverHTTP2(WebSocket parent, Uri uri, string origin, string protocol)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.WebSocket.WebSocket.html">WebSocket</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">origin</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">protocol</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="BestHTTP_WebSocket_OverHTTP2_BufferedAmount_" data-uid="BestHTTP.WebSocket.OverHTTP2.BufferedAmount*"></a>
+  <h4 id="BestHTTP_WebSocket_OverHTTP2_BufferedAmount" data-uid="BestHTTP.WebSocket.OverHTTP2.BufferedAmount">BufferedAmount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int BufferedAmount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_BufferedAmount">WebSocketBaseImplementation.BufferedAmount</a></div>
+
+
+  <a id="BestHTTP_WebSocket_OverHTTP2_IsOpen_" data-uid="BestHTTP.WebSocket.OverHTTP2.IsOpen*"></a>
+  <h4 id="BestHTTP_WebSocket_OverHTTP2_IsOpen" data-uid="BestHTTP.WebSocket.OverHTTP2.IsOpen">IsOpen</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsOpen { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_IsOpen">WebSocketBaseImplementation.IsOpen</a></div>
+
+
+  <a id="BestHTTP_WebSocket_OverHTTP2_Latency_" data-uid="BestHTTP.WebSocket.OverHTTP2.Latency*"></a>
+  <h4 id="BestHTTP_WebSocket_OverHTTP2_Latency" data-uid="BestHTTP.WebSocket.OverHTTP2.Latency">Latency</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Latency { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_Latency">WebSocketBaseImplementation.Latency</a></div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="BestHTTP_WebSocket_OverHTTP2_CreateInternalRequest_" data-uid="BestHTTP.WebSocket.OverHTTP2.CreateInternalRequest*"></a>
+  <h4 id="BestHTTP_WebSocket_OverHTTP2_CreateInternalRequest" data-uid="BestHTTP.WebSocket.OverHTTP2.CreateInternalRequest">CreateInternalRequest()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void CreateInternalRequest()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_CreateInternalRequest">WebSocketBaseImplementation.CreateInternalRequest()</a></div>
+
+
+  <a id="BestHTTP_WebSocket_OverHTTP2_GetNextInteraction_" data-uid="BestHTTP.WebSocket.OverHTTP2.GetNextInteraction*"></a>
+  <h4 id="BestHTTP_WebSocket_OverHTTP2_GetNextInteraction" data-uid="BestHTTP.WebSocket.OverHTTP2.GetNextInteraction">GetNextInteraction()</h4>
+  <div class="markdown level1 summary"><p>Next interaction relative to <em>now</em>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan GetNextInteraction()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_WebSocket_OverHTTP2_OnHeartbeatUpdate_" data-uid="BestHTTP.WebSocket.OverHTTP2.OnHeartbeatUpdate*"></a>
+  <h4 id="BestHTTP_WebSocket_OverHTTP2_OnHeartbeatUpdate_System_TimeSpan_" data-uid="BestHTTP.WebSocket.OverHTTP2.OnHeartbeatUpdate(System.TimeSpan)">OnHeartbeatUpdate(TimeSpan)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnHeartbeatUpdate(TimeSpan dif)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="parametername">dif</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_WebSocket_OverHTTP2_Send_" data-uid="BestHTTP.WebSocket.OverHTTP2.Send*"></a>
+  <h4 id="BestHTTP_WebSocket_OverHTTP2_Send_System_Byte___System_UInt64_System_UInt64_" data-uid="BestHTTP.WebSocket.OverHTTP2.Send(System.Byte[],System.UInt64,System.UInt64)">Send(byte[], ulong, ulong)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Send(byte[] data, ulong offset, ulong count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_Send_System_Byte___System_UInt64_System_UInt64_">WebSocketBaseImplementation.Send(byte[], ulong, ulong)</a></div>
+
+
+  <a id="BestHTTP_WebSocket_OverHTTP2_Send_" data-uid="BestHTTP.WebSocket.OverHTTP2.Send*"></a>
+  <h4 id="BestHTTP_WebSocket_OverHTTP2_Send_System_Byte___" data-uid="BestHTTP.WebSocket.OverHTTP2.Send(System.Byte[])">Send(byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Send(byte[] buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_Send_System_Byte___">WebSocketBaseImplementation.Send(byte[])</a></div>
+
+
+  <a id="BestHTTP_WebSocket_OverHTTP2_Send_" data-uid="BestHTTP.WebSocket.OverHTTP2.Send*"></a>
+  <h4 id="BestHTTP_WebSocket_OverHTTP2_Send_System_String_" data-uid="BestHTTP.WebSocket.OverHTTP2.Send(System.String)">Send(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Send(string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_Send_System_String_">WebSocketBaseImplementation.Send(string)</a></div>
+
+
+  <a id="BestHTTP_WebSocket_OverHTTP2_Send_" data-uid="BestHTTP.WebSocket.OverHTTP2.Send*"></a>
+  <h4 id="BestHTTP_WebSocket_OverHTTP2_Send_WebSocketFrame_" data-uid="BestHTTP.WebSocket.OverHTTP2.Send(WebSocketFrame)">Send(WebSocketFrame)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Send(WebSocketFrame frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WebSocketFrame</span></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_Send_WebSocketFrame_">WebSocketBaseImplementation.Send(WebSocketFrame)</a></div>
+
+
+  <a id="BestHTTP_WebSocket_OverHTTP2_SendAsBinary_" data-uid="BestHTTP.WebSocket.OverHTTP2.SendAsBinary*"></a>
+  <h4 id="BestHTTP_WebSocket_OverHTTP2_SendAsBinary_BufferSegment_" data-uid="BestHTTP.WebSocket.OverHTTP2.SendAsBinary(BufferSegment)">SendAsBinary(BufferSegment)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SendAsBinary(BufferSegment data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BufferSegment</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_SendAsBinary_BufferSegment_">WebSocketBaseImplementation.SendAsBinary(BufferSegment)</a></div>
+
+
+  <a id="BestHTTP_WebSocket_OverHTTP2_SendAsText_" data-uid="BestHTTP.WebSocket.OverHTTP2.SendAsText*"></a>
+  <h4 id="BestHTTP_WebSocket_OverHTTP2_SendAsText_BufferSegment_" data-uid="BestHTTP.WebSocket.OverHTTP2.SendAsText(BufferSegment)">SendAsText(BufferSegment)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SendAsText(BufferSegment data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BufferSegment</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_SendAsText_BufferSegment_">WebSocketBaseImplementation.SendAsText(BufferSegment)</a></div>
+
+
+  <a id="BestHTTP_WebSocket_OverHTTP2_StartClose_" data-uid="BestHTTP.WebSocket.OverHTTP2.StartClose*"></a>
+  <h4 id="BestHTTP_WebSocket_OverHTTP2_StartClose_System_UInt16_System_String_" data-uid="BestHTTP.WebSocket.OverHTTP2.StartClose(System.UInt16,System.String)">StartClose(ushort, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void StartClose(ushort code, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ushort</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_StartClose_System_UInt16_System_String_">WebSocketBaseImplementation.StartClose(ushort, string)</a></div>
+
+
+  <a id="BestHTTP_WebSocket_OverHTTP2_StartOpen_" data-uid="BestHTTP.WebSocket.OverHTTP2.StartOpen*"></a>
+  <h4 id="BestHTTP_WebSocket_OverHTTP2_StartOpen" data-uid="BestHTTP.WebSocket.OverHTTP2.StartOpen">StartOpen()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void StartOpen()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.WebSocket.WebSocketBaseImplementation.html#BestHTTP_WebSocket_WebSocketBaseImplementation_StartOpen">WebSocketBaseImplementation.StartOpen()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IHeartbeat</span>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

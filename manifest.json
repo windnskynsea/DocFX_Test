@@ -1,0 +1,750 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/GitHub/AvatarRuntimeGesture/Documentation/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Amazon.AmazonDownloadParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Amazon.AmazonDownloadParams.html",
+          "hash": "zA9DXNPyKPqD3GB8Rq4aSHOYUrFtoaPvyr9ROeidcy8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Amazon.AmazonS3ClientAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Amazon.AmazonS3ClientAction.html",
+          "hash": "9O4dnop61CSgam8epaQDe3JS685DMtVe12Wb2OfXgwE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Amazon.AmazonServiceConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Amazon.AmazonServiceConstants.html",
+          "hash": "Xdsl5JKAlc6tjNhzjmyDZn1R5ElPS2zl0GDI+AJzVXk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Amazon.AmazonServiceHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Amazon.AmazonServiceHandler.html",
+          "hash": "WwdfA//fk9DjwOVbMFkUgK/0/rBeMmREnwHqE5hOpAc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Amazon.AmazonServiceHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Amazon.AmazonServiceHelper.html",
+          "hash": "R6irtstd9VgnYxM2413BogPkgewTRNSAP7FSnaDfTHY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Amazon.AmazonServiceManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Amazon.AmazonServiceManager.html",
+          "hash": "eIReBIbWcUGIIATMRGrObBhlRLyCSikydwBkFehbGEs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Amazon.AmazonServiceSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Amazon.AmazonServiceSettings.html",
+          "hash": "dURex7L0oKXTPz1nCm1ErnLrEWmjG04no6JrR7p5TxU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Amazon.AmazonUploadParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Amazon.AmazonUploadParams.html",
+          "hash": "6PiL1aL6rfHPcX4VD3+QTAPqb1htkf2kI0pHs/hZ39M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Amazon.AssignAmazonInfoCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Amazon.AssignAmazonInfoCallback.html",
+          "hash": "beGUlrsz/fqhTSo9fkC3gLC1we009r5IDnFR8hvNdaw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Amazon.OnAssumeRoleInfoRequestFinished.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Amazon.OnAssumeRoleInfoRequestFinished.html",
+          "hash": "6AF0oL6Ihh5GfOMj4n9w87loAULQUAOnjq/OMcMIMVc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Amazon.OnDownloadFinished.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Amazon.OnDownloadFinished.html",
+          "hash": "JAGOZF73dJ1z+Q/7NBqf+tmW3HTn3rpFsC4O54DzIkQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Amazon.OnDownloadStatusChanged.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Amazon.OnDownloadStatusChanged.html",
+          "hash": "QbduIvJPDRz+Ua5TxOnqVr6R6HxNn6tuFrNbdjLyn+E="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Amazon.OnS3BucketInfoRequestFinished.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Amazon.OnS3BucketInfoRequestFinished.html",
+          "hash": "PStgscuQKkisInI3pqWgJe9yhaQR7v3FiEriBeaDwbI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Amazon.OnUploadFinished.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Amazon.OnUploadFinished.html",
+          "hash": "GsgvkwLyX6NhW7sLyac7Dd/0I9dJJH897XyQHUz8myU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Amazon.RegionEP.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Amazon.RegionEP.html",
+          "hash": "vAGBsKvz2yTRR4ykb5jLSdpl7bwEnr7g/JE/EDX/rTU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Amazon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Amazon.html",
+          "hash": "JxZzrW0p+XX6bUr2N9IcK751GmWDrV6tRe27NvZwA7o="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.AssetBundle.AssetBundleBuildSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.AssetBundle.AssetBundleBuildSettings.html",
+          "hash": "lYyt9o4YRWtG0OF43svszzpcfwaLWLLKCmoMDNdCBnM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.AssetBundle.AssetBundleConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.AssetBundle.AssetBundleConstants.html",
+          "hash": "2H/HRP3Vbm6PU6sNNYTQ3quqaugxAug7l30RB1/cqGM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.AssetBundle.AssetBundleHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.AssetBundle.AssetBundleHandler.html",
+          "hash": "BDOWf2tC0M8xZuKKKStgT01A9pg3hznjIKoGEuywmgg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.AssetBundle.AssetBundleHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.AssetBundle.AssetBundleHelper.html",
+          "hash": "B3JHS+GgvYvodOfGaiYtc0MehxWrgJBGxTG1lb3mpeM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.AssetBundle.AssetBundleParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.AssetBundle.AssetBundleParams.html",
+          "hash": "wdeVI4EpQL9ikpsHPcDoWdkGUE3OC3tu4Q1StRLfnrI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.AssetBundle.AssetBundleUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.AssetBundle.AssetBundleUtils.html",
+          "hash": "0sdjgLKia28jPn63kz7+cTBjiHJ55reVD05CcN61lVo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.AssetBundle.AssetType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.AssetBundle.AssetType.html",
+          "hash": "NRmtnSfidPffNuEP8h5vvV3d83CA8xOy5agHjTmPMq8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.AssetBundle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.AssetBundle.html",
+          "hash": "I0YXUHGG6l0FZojuM5I5+eBb08p8VLRyWRPGBQ7Lg98="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Avatar.AnimLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Avatar.AnimLayer.html",
+          "hash": "wrqMki/DRY3l4ijzPpc6swN0QfasXz9JvonrVhQTL+E="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Avatar.AnimationsArnResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Avatar.AnimationsArnResponse.html",
+          "hash": "kwKJnLaHFVx7I6QUqaaieQHEg4SNvvxmqqxpRiioqCs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Avatar.AnimationsArnResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Avatar.AnimationsArnResponseData.html",
+          "hash": "LFY9oYXNXMF/a/yPMkzz/SnJvKKxI+SVGhQUzaG8Emk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Avatar.AnimationsLatestResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Avatar.AnimationsLatestResponse.html",
+          "hash": "QGJ+XLJL474N+BMxFYsMiqcO5CwDf+hg/uJsYdTjmLE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Avatar.AnimationsLatestResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Avatar.AnimationsLatestResponseData.html",
+          "hash": "zYTDIQ92F9EiXkep6Hv/wfMtZzEuH4EQ8fZ8VU8oJS8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Avatar.AnimationsResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Avatar.AnimationsResponse.html",
+          "hash": "W1zNCuRinqwX66bzij77HOAkURK0M8nlY0y992KVMGQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Avatar.AnimationsResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Avatar.AnimationsResponseData.html",
+          "hash": "4w3VoNN0hB2mfihxMwYzJchQwreF+P3PWwkHhSKVErU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Avatar.AnimationsS3UrlResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Avatar.AnimationsS3UrlResponse.html",
+          "hash": "oEhZKBvZSfddfy0QgyYIGkF5hUiaS8WziqDYWn+lPoc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Avatar.AnimationsS3UrlResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Avatar.AnimationsS3UrlResponseData.html",
+          "hash": "IIf9KwjudHjbl8lAQchaNTcP8j4Hwi239vnecqzTkW0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Avatar.AvatarRuntimeAnimPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Avatar.AvatarRuntimeAnimPlayer.html",
+          "hash": "jq+u/ZODYYC+P5ziWHOETTznZgDnO/tblZJfPrww77g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Avatar.AvatarRuntimeGestureHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Avatar.AvatarRuntimeGestureHandler.html",
+          "hash": "DWUyOJ+x4UMvnFJKCq4Qs3kSyIg3yxMsbyNrSobjmJw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Avatar.OnDownloadFinished.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Avatar.OnDownloadFinished.html",
+          "hash": "cLrcctVAHnW1CL75iakaFcyPK0L3FT38E7QsrG99pzc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Avatar.OnGestureAssetInfoRequestFinished.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Avatar.OnGestureAssetInfoRequestFinished.html",
+          "hash": "ZQxOgWr+jevxbNs7HPZwHi+ZwYxpVKzzr9hA8IKhvZU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Avatar.OnLastUpdatedTimeRequestFinished.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Avatar.OnLastUpdatedTimeRequestFinished.html",
+          "hash": "jWL966k6J3JpsiXxUMjwKPZSUoKdB+JhCN93/EA/d64="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Avatar.OnRefreshFinished.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Avatar.OnRefreshFinished.html",
+          "hash": "4EVo+14ubfPhbG57NVjJvSeqKvkCJLZroKYzPFLY/V8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Avatar.ResultBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Avatar.ResultBase.html",
+          "hash": "rUi2JmRgxwANHCDaG6nPFZLaTEsw/t3jmSURyKvI8Sc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Avatar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Avatar.html",
+          "hash": "KCgPPLEbGaB4SdXn4rQBNXa5pg7oQl968dBprYo3ZAc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Common.AvatarRuntimeGestureSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Common.AvatarRuntimeGestureSettings.html",
+          "hash": "mJzXYbU2ECNlb6xiCXVO3MLPJkUjH5C+KMyaCUIwyg4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Common.CommonConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Common.CommonConstants.html",
+          "hash": "QchF3UbjdiDyDUOES3tb6XynaUln32naZKhU+b5uzfc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Common.CommonUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Common.CommonUtils.html",
+          "hash": "Bs/VjfZ+iwPavrz1srIXmAG0+rnOhVkQLQd8hp6Du98="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Common.DeploymentEnvironments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Common.DeploymentEnvironments.html",
+          "hash": "1zgHGfULZVRWpYbwCxmDpVJfwLYdFlwCeJkj2UL4+a8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Common.Environment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Common.Environment.html",
+          "hash": "Kev4h3XgKCuJwlyTt/J3Ss78F3H0vQp3mnW81mu0SGc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Common.InspectionMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Common.InspectionMode.html",
+          "hash": "F1ZUAL1zcLyhHWVDr+VJbaIs/K1cEqxKrMJZrFwJatU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Common.LazySingleton-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Common.LazySingleton-1.html",
+          "hash": "JGaVHM1QfG/MUrIUvNNzeOBQ5lV7nOIXfdSjBGNTqVo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Common.Logging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Common.Logging.html",
+          "hash": "K3T68f9lZnsLFYmAOVc0TzKd6UeufyvuQPhHVirEChU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Common.OnRequestFinished.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Common.OnRequestFinished.html",
+          "hash": "YUCrOp082BP7zndkXQD5WybR/RXHVO0+X7vM6k4qOZI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Common.RestApiHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Common.RestApiHandler.html",
+          "hash": "EoqdNV82rV2xrKFW1oGOpj4KLpJVoOqoxpfnmqFW8Fw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Common.RestApiHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Common.RestApiHelper.html",
+          "hash": "FjmKiCF0+/Om+ZtpOgs6oY1pcac6Y+askyGZ64w46lY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Common.RestApiSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Common.RestApiSettings.html",
+          "hash": "gwPTu3wDMV01O/s8a8P4GsGj0iEpif/yXlV27X9KxT0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Common.ScriptableObjectSingleton-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Common.ScriptableObjectSingleton-1.html",
+          "hash": "+03gQcu5X70zQ2tAZV7N0S068C9D4q69nNGdlysQ/0k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LGUplus.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LGUplus.Common.html",
+          "hash": "n5AXjTyHMzqvI+N4uxbPIz4474WJjtss6CfXmt+eLWs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "8kCaIrrES3CTfWkAmMOM01a39Irosg9yQOMcallfpcc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "ons50xw4L+fPiun35yTIxSoyX06d9DMrxoc2F3a+X4U="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "8zHxwNg9wRv4reaJ3EsavryMHKH3bFhphjmOZggQj8Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 55,
+          "skipped_file_count": 54
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

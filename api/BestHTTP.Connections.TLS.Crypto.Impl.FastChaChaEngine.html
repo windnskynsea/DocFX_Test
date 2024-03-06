@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class FastChaChaEngine
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class FastChaChaEngine
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastChaChaEngine">
+
+
+  <h1 id="BestHTTP_Connections_TLS_Crypto_Impl_FastChaChaEngine" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastChaChaEngine" class="text-break">Class FastChaChaEngine
+</h1>
+  <div class="markdown level0 summary"><p>Implementation of Daniel J. Bernstein's ChaCha stream cipher.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="BestHTTP.Connections.TLS.Crypto.Impl.FastSalsa20Engine.html">FastSalsa20Engine</a></div>
+    <div class="level2"><span class="xref">FastChaChaEngine</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.TLS.Crypto.Impl.FastSalsa20Engine.html#BestHTTP_Connections_TLS_Crypto_Impl_FastSalsa20Engine_DEFAULT_ROUNDS">FastSalsa20Engine.DEFAULT_ROUNDS</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.TLS.Crypto.Impl.FastSalsa20Engine.html#BestHTTP_Connections_TLS_Crypto_Impl_FastSalsa20Engine_rounds">FastSalsa20Engine.rounds</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.TLS.Crypto.Impl.FastSalsa20Engine.html#BestHTTP_Connections_TLS_Crypto_Impl_FastSalsa20Engine_Init_System_Boolean_ICipherParameters_">FastSalsa20Engine.Init(bool, ICipherParameters)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.TLS.Crypto.Impl.FastSalsa20Engine.html#BestHTTP_Connections_TLS_Crypto_Impl_FastSalsa20Engine_NonceSize">FastSalsa20Engine.NonceSize</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.TLS.Crypto.Impl.FastSalsa20Engine.html#BestHTTP_Connections_TLS_Crypto_Impl_FastSalsa20Engine_ReturnByte_System_Byte_">FastSalsa20Engine.ReturnByte(byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.TLS.Crypto.Impl.FastSalsa20Engine.html#BestHTTP_Connections_TLS_Crypto_Impl_FastSalsa20Engine_ProcessBytes_System_Byte___System_Int32_System_Int32_System_Byte___System_Int32_">FastSalsa20Engine.ProcessBytes(byte[], int, int, byte[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.TLS.Crypto.Impl.FastSalsa20Engine.html#BestHTTP_Connections_TLS_Crypto_Impl_FastSalsa20Engine_Reset">FastSalsa20Engine.Reset()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.html">BestHTTP</a>.<a class="xref" href="BestHTTP.Connections.html">Connections</a>.<a class="xref" href="BestHTTP.Connections.TLS.html">TLS</a>.<a class="xref" href="BestHTTP.Connections.TLS.Crypto.html">Crypto</a>.<a class="xref" href="BestHTTP.Connections.TLS.Crypto.Impl.html">Impl</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_Connections_TLS_Crypto_Impl_FastChaChaEngine_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FastChaChaEngine : FastSalsa20Engine</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastChaChaEngine__ctor_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastChaChaEngine.#ctor*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastChaChaEngine__ctor" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastChaChaEngine.#ctor">FastChaChaEngine()</h4>
+  <div class="markdown level1 summary"><p>Creates a 20 rounds ChaCha engine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FastChaChaEngine()</code></pre>
+  </div>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastChaChaEngine__ctor_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastChaChaEngine.#ctor*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastChaChaEngine__ctor_System_Int32_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastChaChaEngine.#ctor(System.Int32)">FastChaChaEngine(int)</h4>
+  <div class="markdown level1 summary"><p>Creates a ChaCha engine with a specific number of rounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FastChaChaEngine(int rounds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">rounds</span></td>
+        <td><p>the number of rounds (must be an even number).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastChaChaEngine_AlgorithmName_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastChaChaEngine.AlgorithmName*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastChaChaEngine_AlgorithmName" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastChaChaEngine.AlgorithmName">AlgorithmName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string AlgorithmName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.Connections.TLS.Crypto.Impl.FastSalsa20Engine.html#BestHTTP_Connections_TLS_Crypto_Impl_FastSalsa20Engine_AlgorithmName">FastSalsa20Engine.AlgorithmName</a></div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastChaChaEngine_AdvanceCounter_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastChaChaEngine.AdvanceCounter*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastChaChaEngine_AdvanceCounter" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastChaChaEngine.AdvanceCounter">AdvanceCounter()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void AdvanceCounter()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.Connections.TLS.Crypto.Impl.FastSalsa20Engine.html#BestHTTP_Connections_TLS_Crypto_Impl_FastSalsa20Engine_AdvanceCounter">FastSalsa20Engine.AdvanceCounter()</a></div>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastChaChaEngine_GenerateKeyStream_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastChaChaEngine.GenerateKeyStream*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastChaChaEngine_GenerateKeyStream_System_Byte___" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastChaChaEngine.GenerateKeyStream(System.Byte[])">GenerateKeyStream(byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void GenerateKeyStream(byte[] output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.Connections.TLS.Crypto.Impl.FastSalsa20Engine.html#BestHTTP_Connections_TLS_Crypto_Impl_FastSalsa20Engine_GenerateKeyStream_System_Byte___">FastSalsa20Engine.GenerateKeyStream(byte[])</a></div>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastChaChaEngine_ResetCounter_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastChaChaEngine.ResetCounter*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastChaChaEngine_ResetCounter" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastChaChaEngine.ResetCounter">ResetCounter()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ResetCounter()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.Connections.TLS.Crypto.Impl.FastSalsa20Engine.html#BestHTTP_Connections_TLS_Crypto_Impl_FastSalsa20Engine_ResetCounter">FastSalsa20Engine.ResetCounter()</a></div>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastChaChaEngine_SetKey_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastChaChaEngine.SetKey*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastChaChaEngine_SetKey_System_Byte___System_Byte___" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastChaChaEngine.SetKey(System.Byte[],System.Byte[])">SetKey(byte[], byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void SetKey(byte[] keyBytes, byte[] ivBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">keyBytes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">ivBytes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.Connections.TLS.Crypto.Impl.FastSalsa20Engine.html#BestHTTP_Connections_TLS_Crypto_Impl_FastSalsa20Engine_SetKey_System_Byte___System_Byte___">FastSalsa20Engine.SetKey(byte[], byte[])</a></div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,834 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AbstractTls13Client
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AbstractTls13Client
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client">
+
+
+  <h1 id="BestHTTP_Connections_TLS_AbstractTls13Client" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client" class="text-break">Class AbstractTls13Client
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">AbstractTls13Client</span></div>
+      <div class="level2"><a class="xref" href="BestHTTP.Connections.TLS.DefaultTls13Client.html">DefaultTls13Client</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">TlsAuthentication</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.html">BestHTTP</a>.<a class="xref" href="BestHTTP.Connections.html">Connections</a>.<a class="xref" href="BestHTTP.Connections.TLS.html">TLS</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_Connections_TLS_AbstractTls13Client_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class AbstractTls13Client : AbstractTlsClient, TlsAuthentication</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client__ctor_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.#ctor*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client__ctor_BestHTTP_HTTPRequest_System_Collections_Generic_List_ServerName__System_Collections_Generic_List_ProtocolName__TlsCrypto_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.#ctor(BestHTTP.HTTPRequest,System.Collections.Generic.List{ServerName},System.Collections.Generic.List{ProtocolName},TlsCrypto)">AbstractTls13Client(HTTPRequest, List&lt;ServerName&gt;, List&lt;ProtocolName&gt;, TlsCrypto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AbstractTls13Client(HTTPRequest request, List&lt;ServerName&gt; sniServerNames, List&lt;ProtocolName&gt; protocols, TlsCrypto crypto)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<span class="xref">ServerName</span>&gt;</td>
+        <td><span class="parametername">sniServerNames</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<span class="xref">ProtocolName</span>&gt;</td>
+        <td><span class="parametername">protocols</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TlsCrypto</span></td>
+        <td><span class="parametername">crypto</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client__protocols" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client._protocols">_protocols</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;ProtocolName&gt; _protocols</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<span class="xref">ProtocolName</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client__request" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client._request">_request</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HTTPRequest _request</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client__sniServerNames" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client._sniServerNames">_sniServerNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;ServerName&gt; _sniServerNames</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<span class="xref">ServerName</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_DefaultCipherSuites" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.DefaultCipherSuites">DefaultCipherSuites</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static readonly int[] DefaultCipherSuites</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_Context_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.Context*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_Context" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.Context">Context</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LoggingContext Context { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LoggingContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_GetAuthentication_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.GetAuthentication*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_GetAuthentication" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.GetAuthentication">GetAuthentication()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsAuthentication GetAuthentication()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsAuthentication</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_GetClientCredentials_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.GetClientCredentials*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_GetClientCredentials_CertificateRequest_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.GetClientCredentials(CertificateRequest)">GetClientCredentials(CertificateRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TlsCredentials GetClientCredentials(CertificateRequest certificateRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CertificateRequest</span></td>
+        <td><span class="parametername">certificateRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsCredentials</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_GetNegotiatedApplicationProtocol_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.GetNegotiatedApplicationProtocol*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_GetNegotiatedApplicationProtocol" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.GetNegotiatedApplicationProtocol">GetNegotiatedApplicationProtocol()</h4>
+  <div class="markdown level1 summary"><p>TCPConnector has to know what protocol got negotiated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetNegotiatedApplicationProtocol()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_GetProtocolNames_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.GetProtocolNames*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_GetProtocolNames" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.GetProtocolNames">GetProtocolNames()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IList&lt;ProtocolName&gt; GetProtocolNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList&lt;T&gt;</span>&lt;<span class="xref">ProtocolName</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_GetSniServerNames_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.GetSniServerNames*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_GetSniServerNames" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.GetSniServerNames">GetSniServerNames()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IList&lt;ServerName&gt; GetSniServerNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList&lt;T&gt;</span>&lt;<span class="xref">ServerName</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_GetSupportedCipherSuites_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.GetSupportedCipherSuites*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_GetSupportedCipherSuites" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.GetSupportedCipherSuites">GetSupportedCipherSuites()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int[] GetSupportedCipherSuites()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_GetSupportedVersions_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.GetSupportedVersions*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_GetSupportedVersions" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.GetSupportedVersions">GetSupportedVersions()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override ProtocolVersion[] GetSupportedVersions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ProtocolVersion</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifyAlertRaised_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifyAlertRaised*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifyAlertRaised_System_Int16_System_Int16_System_String_System_Exception_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifyAlertRaised(System.Int16,System.Int16,System.String,System.Exception)">NotifyAlertRaised(short, short, string, Exception)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NotifyAlertRaised(short alertLevel, short alertDescription, string message, Exception cause)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td><span class="parametername">alertLevel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td><span class="parametername">alertDescription</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">cause</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifyAlertReceived_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifyAlertReceived*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifyAlertReceived_System_Int16_System_Int16_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifyAlertReceived(System.Int16,System.Int16)">NotifyAlertReceived(short, short)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NotifyAlertReceived(short alertLevel, short alertDescription)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td><span class="parametername">alertLevel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td><span class="parametername">alertDescription</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifyHandshakeBeginning_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifyHandshakeBeginning*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifyHandshakeBeginning" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifyHandshakeBeginning">NotifyHandshakeBeginning()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NotifyHandshakeBeginning()</code></pre>
+  </div>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifyHandshakeComplete_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifyHandshakeComplete*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifyHandshakeComplete" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifyHandshakeComplete">NotifyHandshakeComplete()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NotifyHandshakeComplete()</code></pre>
+  </div>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifyNewSessionTicket_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifyNewSessionTicket*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifyNewSessionTicket_NewSessionTicket_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifyNewSessionTicket(NewSessionTicket)">NotifyNewSessionTicket(NewSessionTicket)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NotifyNewSessionTicket(NewSessionTicket newSessionTicket)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NewSessionTicket</span></td>
+        <td><span class="parametername">newSessionTicket</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifySecureRenegotiation_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifySecureRenegotiation*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifySecureRenegotiation_System_Boolean_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifySecureRenegotiation(System.Boolean)">NotifySecureRenegotiation(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NotifySecureRenegotiation(bool secureRenegotiation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">secureRenegotiation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifySelectedCipherSuite_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifySelectedCipherSuite*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifySelectedCipherSuite_System_Int32_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifySelectedCipherSuite(System.Int32)">NotifySelectedCipherSuite(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NotifySelectedCipherSuite(int selectedCipherSuite)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">selectedCipherSuite</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifySelectedPsk_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifySelectedPsk*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifySelectedPsk_TlsPsk_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifySelectedPsk(TlsPsk)">NotifySelectedPsk(TlsPsk)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NotifySelectedPsk(TlsPsk selectedPsk)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsPsk</span></td>
+        <td><span class="parametername">selectedPsk</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifyServerCertificate_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifyServerCertificate*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifyServerCertificate_TlsServerCertificate_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifyServerCertificate(TlsServerCertificate)">NotifyServerCertificate(TlsServerCertificate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void NotifyServerCertificate(TlsServerCertificate serverCertificate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsServerCertificate</span></td>
+        <td><span class="parametername">serverCertificate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifyServerVersion_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifyServerVersion*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifyServerVersion_ProtocolVersion_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifyServerVersion(ProtocolVersion)">NotifyServerVersion(ProtocolVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NotifyServerVersion(ProtocolVersion serverVersion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ProtocolVersion</span></td>
+        <td><span class="parametername">serverVersion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifySessionID_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifySessionID*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifySessionID_System_Byte___" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifySessionID(System.Byte[])">NotifySessionID(byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NotifySessionID(byte[] sessionID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">sessionID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifySessionToResume_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifySessionToResume*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_NotifySessionToResume_TlsSession_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.NotifySessionToResume(TlsSession)">NotifySessionToResume(TlsSession)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NotifySessionToResume(TlsSession session)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsSession</span></td>
+        <td><span class="parametername">session</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_AbstractTls13Client_ProcessServerExtensions_" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.ProcessServerExtensions*"></a>
+  <h4 id="BestHTTP_Connections_TLS_AbstractTls13Client_ProcessServerExtensions_System_Collections_Generic_IDictionary_System_Int32_System_Byte____" data-uid="BestHTTP.Connections.TLS.AbstractTls13Client.ProcessServerExtensions(System.Collections.Generic.IDictionary{System.Int32,System.Byte[]})">ProcessServerExtensions(IDictionary&lt;int, byte[]&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ProcessServerExtensions(IDictionary&lt;int, byte[]&gt; serverExtensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;</span>&lt;<span class="xref">int</span>, <span class="xref">byte</span>[]&gt;</td>
+        <td><span class="parametername">serverExtensions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">TlsAuthentication</span>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

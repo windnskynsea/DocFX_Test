@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class HTTP2WebSocketStream
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class HTTP2WebSocketStream
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.Connections.HTTP2.HTTP2WebSocketStream">
+
+
+  <h1 id="BestHTTP_Connections_HTTP2_HTTP2WebSocketStream" data-uid="BestHTTP.Connections.HTTP2.HTTP2WebSocketStream" class="text-break">Class HTTP2WebSocketStream
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html">HTTP2Stream</a></div>
+    <div class="level2"><span class="xref">HTTP2WebSocketStream</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_Id">HTTP2Stream.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_State">HTTP2Stream.State</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_AssignedRequest">HTTP2Stream.AssignedRequest</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_Context">HTTP2Stream.Context</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_isStreamedDownload">HTTP2Stream.isStreamedDownload</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_downloaded">HTTP2Stream.downloaded</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_uploadStreamInfo">HTTP2Stream.uploadStreamInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_settings">HTTP2Stream.settings</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_encoder">HTTP2Stream.encoder</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_outgoing">HTTP2Stream.outgoing</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_incomingFrames">HTTP2Stream.incomingFrames</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_headerView">HTTP2Stream.headerView</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_dataView">HTTP2Stream.dataView</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_localWindow">HTTP2Stream.localWindow</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_remoteWindow">HTTP2Stream.remoteWindow</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_windowUpdateThreshold">HTTP2Stream.windowUpdateThreshold</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_sentData">HTTP2Stream.sentData</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_isRSTFrameSent">HTTP2Stream.isRSTFrameSent</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_isEndSTRReceived">HTTP2Stream.isEndSTRReceived</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_response">HTTP2Stream.response</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_parent">HTTP2Stream.parent</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_lastReadCount">HTTP2Stream.lastReadCount</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_Process_System_Collections_Generic_List_BestHTTP_Connections_HTTP2_HTTP2FrameHeaderAndPayload__">HTTP2Stream.Process(List&lt;HTTP2FrameHeaderAndPayload&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_AddFrame_BestHTTP_Connections_HTTP2_HTTP2FrameHeaderAndPayload_System_Collections_Generic_List_BestHTTP_Connections_HTTP2_HTTP2FrameHeaderAndPayload__">HTTP2Stream.AddFrame(HTTP2FrameHeaderAndPayload, List&lt;HTTP2FrameHeaderAndPayload&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_Abort_System_String_">HTTP2Stream.Abort(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_ProcessIncomingFrames_System_Collections_Generic_List_BestHTTP_Connections_HTTP2_HTTP2FrameHeaderAndPayload__">HTTP2Stream.ProcessIncomingFrames(List&lt;HTTP2FrameHeaderAndPayload&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_ProcessState_System_Collections_Generic_List_BestHTTP_Connections_HTTP2_HTTP2FrameHeaderAndPayload__">HTTP2Stream.ProcessState(List&lt;HTTP2FrameHeaderAndPayload&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_OnRemoteSettingChanged_BestHTTP_Connections_HTTP2_HTTP2SettingsRegistry_BestHTTP_Connections_HTTP2_HTTP2Settings_System_UInt32_System_UInt32_">HTTP2Stream.OnRemoteSettingChanged(HTTP2SettingsRegistry, HTTP2Settings, uint, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_FinishRequest_BestHTTP_Connections_HTTP2_HTTP2Stream_BestHTTP_Connections_HTTP2_FramesAsStreamView_">HTTP2Stream.FinishRequest(HTTP2Stream, FramesAsStreamView)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_Removed">HTTP2Stream.Removed()</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.html">BestHTTP</a>.<a class="xref" href="BestHTTP.Connections.html">Connections</a>.<a class="xref" href="BestHTTP.Connections.HTTP2.html">HTTP2</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_Connections_HTTP2_HTTP2WebSocketStream_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class HTTP2WebSocketStream : HTTP2Stream</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2WebSocketStream__ctor_" data-uid="BestHTTP.Connections.HTTP2.HTTP2WebSocketStream.#ctor*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2WebSocketStream__ctor_System_UInt32_BestHTTP_Connections_HTTP2_HTTP2Handler_BestHTTP_Connections_HTTP2_HTTP2SettingsManager_BestHTTP_Connections_HTTP2_HPACKEncoder_" data-uid="BestHTTP.Connections.HTTP2.HTTP2WebSocketStream.#ctor(System.UInt32,BestHTTP.Connections.HTTP2.HTTP2Handler,BestHTTP.Connections.HTTP2.HTTP2SettingsManager,BestHTTP.Connections.HTTP2.HPACKEncoder)">HTTP2WebSocketStream(uint, HTTP2Handler, HTTP2SettingsManager, HPACKEncoder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HTTP2WebSocketStream(uint id, HTTP2Handler parentHandler, HTTP2SettingsManager registry, HPACKEncoder hpackEncoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Handler.html">HTTP2Handler</a></td>
+        <td><span class="parametername">parentHandler</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2SettingsManager.html">HTTP2SettingsManager</a></td>
+        <td><span class="parametername">registry</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.HPACKEncoder.html">HPACKEncoder</a></td>
+        <td><span class="parametername">hpackEncoder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2WebSocketStream_HasFrameToSend_" data-uid="BestHTTP.Connections.HTTP2.HTTP2WebSocketStream.HasFrameToSend*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2WebSocketStream_HasFrameToSend" data-uid="BestHTTP.Connections.HTTP2.HTTP2WebSocketStream.HasFrameToSend">HasFrameToSend</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasFrameToSend { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_HasFrameToSend">HTTP2Stream.HasFrameToSend</a></div>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2WebSocketStream_NextInteraction_" data-uid="BestHTTP.Connections.HTTP2.HTTP2WebSocketStream.NextInteraction*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2WebSocketStream_NextInteraction" data-uid="BestHTTP.Connections.HTTP2.HTTP2WebSocketStream.NextInteraction">NextInteraction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TimeSpan NextInteraction { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_NextInteraction">HTTP2Stream.NextInteraction</a></div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2WebSocketStream_Assign_" data-uid="BestHTTP.Connections.HTTP2.HTTP2WebSocketStream.Assign*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2WebSocketStream_Assign_BestHTTP_HTTPRequest_" data-uid="BestHTTP.Connections.HTTP2.HTTP2WebSocketStream.Assign(BestHTTP.HTTPRequest)">Assign(HTTPRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Assign(HTTPRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_Assign_BestHTTP_HTTPRequest_">HTTP2Stream.Assign(HTTPRequest)</a></div>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2WebSocketStream_ProcessIncomingDATAFrame_" data-uid="BestHTTP.Connections.HTTP2.HTTP2WebSocketStream.ProcessIncomingDATAFrame*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2WebSocketStream_ProcessIncomingDATAFrame_BestHTTP_Connections_HTTP2_HTTP2FrameHeaderAndPayload__System_UInt32__" data-uid="BestHTTP.Connections.HTTP2.HTTP2WebSocketStream.ProcessIncomingDATAFrame(BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload@,System.UInt32@)">ProcessIncomingDATAFrame(ref HTTP2FrameHeaderAndPayload, ref uint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ProcessIncomingDATAFrame(ref HTTP2FrameHeaderAndPayload frame, ref uint windowUpdate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload.html">HTTP2FrameHeaderAndPayload</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">windowUpdate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_ProcessIncomingDATAFrame_BestHTTP_Connections_HTTP2_HTTP2FrameHeaderAndPayload__System_UInt32__">HTTP2Stream.ProcessIncomingDATAFrame(ref HTTP2FrameHeaderAndPayload, ref uint)</a></div>
+
+
+  <a id="BestHTTP_Connections_HTTP2_HTTP2WebSocketStream_ProcessOpenState_" data-uid="BestHTTP.Connections.HTTP2.HTTP2WebSocketStream.ProcessOpenState*"></a>
+  <h4 id="BestHTTP_Connections_HTTP2_HTTP2WebSocketStream_ProcessOpenState_System_Collections_Generic_List_BestHTTP_Connections_HTTP2_HTTP2FrameHeaderAndPayload__" data-uid="BestHTTP.Connections.HTTP2.HTTP2WebSocketStream.ProcessOpenState(System.Collections.Generic.List{BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload})">ProcessOpenState(List&lt;HTTP2FrameHeaderAndPayload&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ProcessOpenState(List&lt;HTTP2FrameHeaderAndPayload&gt; outgoingFrames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2FrameHeaderAndPayload.html">HTTP2FrameHeaderAndPayload</a>&gt;</td>
+        <td><span class="parametername">outgoingFrames</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2Stream.html#BestHTTP_Connections_HTTP2_HTTP2Stream_ProcessOpenState_System_Collections_Generic_List_BestHTTP_Connections_HTTP2_HTTP2FrameHeaderAndPayload__">HTTP2Stream.ProcessOpenState(List&lt;HTTP2FrameHeaderAndPayload&gt;)</a></div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

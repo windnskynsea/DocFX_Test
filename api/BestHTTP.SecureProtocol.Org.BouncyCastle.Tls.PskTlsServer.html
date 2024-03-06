@@ -1,0 +1,609 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class PskTlsServer
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class PskTlsServer
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.PskTlsServer">
+
+
+  <h1 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_PskTlsServer" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.PskTlsServer" class="text-break">Class PskTlsServer
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html">AbstractTlsPeer</a></div>
+    <div class="level2"><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html">AbstractTlsServer</a></div>
+    <div class="level3"><span class="xref">PskTlsServer</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsServer.html">TlsServer</a></div>
+    <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPeer.html">TlsPeer</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_m_context">AbstractTlsServer.m_context</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_m_protocolVersions">AbstractTlsServer.m_protocolVersions</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_m_cipherSuites">AbstractTlsServer.m_cipherSuites</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_m_offeredCipherSuites">AbstractTlsServer.m_offeredCipherSuites</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_m_clientExtensions">AbstractTlsServer.m_clientExtensions</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_m_encryptThenMACOffered">AbstractTlsServer.m_encryptThenMACOffered</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_m_maxFragmentLengthOffered">AbstractTlsServer.m_maxFragmentLengthOffered</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_m_truncatedHMacOffered">AbstractTlsServer.m_truncatedHMacOffered</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_m_clientSentECPointFormats">AbstractTlsServer.m_clientSentECPointFormats</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_m_certificateStatusRequest">AbstractTlsServer.m_certificateStatusRequest</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_m_statusRequestV2">AbstractTlsServer.m_statusRequestV2</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_m_trustedCAKeys">AbstractTlsServer.m_trustedCAKeys</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_m_selectedCipherSuite">AbstractTlsServer.m_selectedCipherSuite</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_m_clientProtocolNames">AbstractTlsServer.m_clientProtocolNames</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_m_selectedProtocolName">AbstractTlsServer.m_selectedProtocolName</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_m_serverExtensions">AbstractTlsServer.m_serverExtensions</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_AllowCertificateStatus">AbstractTlsServer.AllowCertificateStatus()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_AllowEncryptThenMac">AbstractTlsServer.AllowEncryptThenMac()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_AllowMultiCertStatus">AbstractTlsServer.AllowMultiCertStatus()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_AllowTruncatedHmac">AbstractTlsServer.AllowTruncatedHmac()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_AllowTrustedCAIndication">AbstractTlsServer.AllowTrustedCAIndication()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetMaximumNegotiableCurveBits">AbstractTlsServer.GetMaximumNegotiableCurveBits()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetMaximumNegotiableFiniteFieldBits">AbstractTlsServer.GetMaximumNegotiableFiniteFieldBits()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetProtocolNames">AbstractTlsServer.GetProtocolNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_IsSelectableCipherSuite_System_Int32_System_Int32_System_Int32_System_Collections_Generic_IList_System_Int16__">AbstractTlsServer.IsSelectableCipherSuite(int, int, int, IList&lt;short&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_PreferLocalCipherSuites">AbstractTlsServer.PreferLocalCipherSuites()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_SelectCipherSuite_System_Int32_">AbstractTlsServer.SelectCipherSuite(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_SelectDH_System_Int32_">AbstractTlsServer.SelectDH(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_SelectDHDefault_System_Int32_">AbstractTlsServer.SelectDHDefault(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_SelectECDH_System_Int32_">AbstractTlsServer.SelectECDH(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_SelectECDHDefault_System_Int32_">AbstractTlsServer.SelectECDHDefault(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_SelectProtocolName">AbstractTlsServer.SelectProtocolName()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_SelectProtocolName_System_Collections_Generic_IList_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_ProtocolName__System_Collections_Generic_IList_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_ProtocolName__">AbstractTlsServer.SelectProtocolName(IList&lt;ProtocolName&gt;, IList&lt;ProtocolName&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_ShouldSelectProtocolNameEarly">AbstractTlsServer.ShouldSelectProtocolNameEarly()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_PreferLocalClientCertificateTypes">AbstractTlsServer.PreferLocalClientCertificateTypes()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetAllowedClientCertificateTypes">AbstractTlsServer.GetAllowedClientCertificateTypes()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_Init_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsServerContext_">AbstractTlsServer.Init(TlsServerContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetProtocolVersions">AbstractTlsServer.GetProtocolVersions()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetCipherSuites">AbstractTlsServer.GetCipherSuites()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_NotifyHandshakeBeginning">AbstractTlsServer.NotifyHandshakeBeginning()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetSessionToResume_System_Byte___">AbstractTlsServer.GetSessionToResume(byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetNewSessionID">AbstractTlsServer.GetNewSessionID()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetExternalPsk_System_Collections_Generic_IList_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_PskIdentity__">AbstractTlsServer.GetExternalPsk(IList&lt;PskIdentity&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_NotifySession_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsSession_">AbstractTlsServer.NotifySession(TlsSession)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_NotifyClientVersion_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_ProtocolVersion_">AbstractTlsServer.NotifyClientVersion(ProtocolVersion)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_NotifyFallback_System_Boolean_">AbstractTlsServer.NotifyFallback(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_NotifyOfferedCipherSuites_System_Int32___">AbstractTlsServer.NotifyOfferedCipherSuites(int[])</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_ProcessClientExtensions_System_Collections_Generic_IDictionary_System_Int32_System_Byte____">AbstractTlsServer.ProcessClientExtensions(IDictionary&lt;int, byte[]&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetServerVersion">AbstractTlsServer.GetServerVersion()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetSupportedGroups">AbstractTlsServer.GetSupportedGroups()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetSelectedCipherSuite">AbstractTlsServer.GetSelectedCipherSuite()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetServerExtensions">AbstractTlsServer.GetServerExtensions()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetServerExtensionsForConnection_System_Collections_Generic_IDictionary_System_Int32_System_Byte____">AbstractTlsServer.GetServerExtensionsForConnection(IDictionary&lt;int, byte[]&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetServerSupplementalData">AbstractTlsServer.GetServerSupplementalData()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetCertificateStatus">AbstractTlsServer.GetCertificateStatus()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetCertificateRequest">AbstractTlsServer.GetCertificateRequest()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetSrpLoginParameters">AbstractTlsServer.GetSrpLoginParameters()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetDHConfig">AbstractTlsServer.GetDHConfig()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetECDHConfig">AbstractTlsServer.GetECDHConfig()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_ProcessClientSupplementalData_System_Collections_Generic_IList_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_SupplementalDataEntry__">AbstractTlsServer.ProcessClientSupplementalData(IList&lt;SupplementalDataEntry&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_NotifyClientCertificate_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_">AbstractTlsServer.NotifyClientCertificate(Certificate)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetNewSessionTicket">AbstractTlsServer.GetNewSessionTicket()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_Cancel">AbstractTlsPeer.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_Crypto">AbstractTlsPeer.Crypto</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_NotifyCloseHandle_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsCloseable_">AbstractTlsPeer.NotifyCloseHandle(TlsCloseable)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_GetHandshakeTimeoutMillis">AbstractTlsPeer.GetHandshakeTimeoutMillis()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_AllowLegacyResumption">AbstractTlsPeer.AllowLegacyResumption()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_GetMaxCertificateChainLength">AbstractTlsPeer.GetMaxCertificateChainLength()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_GetMaxHandshakeMessageSize">AbstractTlsPeer.GetMaxHandshakeMessageSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_GetPskKeyExchangeModes">AbstractTlsPeer.GetPskKeyExchangeModes()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_RequiresCloseNotify">AbstractTlsPeer.RequiresCloseNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_RequiresExtendedMasterSecret">AbstractTlsPeer.RequiresExtendedMasterSecret()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_ShouldCheckSigAlgOfPeerCerts">AbstractTlsPeer.ShouldCheckSigAlgOfPeerCerts()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_ShouldUseExtendedMasterSecret">AbstractTlsPeer.ShouldUseExtendedMasterSecret()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_ShouldUseExtendedPadding">AbstractTlsPeer.ShouldUseExtendedPadding()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_ShouldUseGmtUnixTime">AbstractTlsPeer.ShouldUseGmtUnixTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_NotifySecureRenegotiation_System_Boolean_">AbstractTlsPeer.NotifySecureRenegotiation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_GetKeyExchangeFactory">AbstractTlsPeer.GetKeyExchangeFactory()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_NotifyAlertRaised_System_Int16_System_Int16_System_String_System_Exception_">AbstractTlsPeer.NotifyAlertRaised(short, short, string, Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_NotifyAlertReceived_System_Int16_System_Int16_">AbstractTlsPeer.NotifyAlertReceived(short, short)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_NotifyHandshakeComplete">AbstractTlsPeer.NotifyHandshakeComplete()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_GetHeartbeat">AbstractTlsPeer.GetHeartbeat()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_GetHeartbeatPolicy">AbstractTlsPeer.GetHeartbeatPolicy()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_IgnoreCorruptDtlsRecords">AbstractTlsPeer.IgnoreCorruptDtlsRecords</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.html">BestHTTP</a>.<span class="xref">SecureProtocol</span>.<span class="xref">Org</span>.<span class="xref">BouncyCastle</span>.<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.html">Tls</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_PskTlsServer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PskTlsServer : AbstractTlsServer, TlsServer, TlsPeer</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_PskTlsServer__ctor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.PskTlsServer.#ctor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_PskTlsServer__ctor_TlsCrypto_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskIdentityManager_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.PskTlsServer.#ctor(TlsCrypto,BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskIdentityManager)">PskTlsServer(TlsCrypto, TlsPskIdentityManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PskTlsServer(TlsCrypto crypto, TlsPskIdentityManager pskIdentityManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsCrypto</span></td>
+        <td><span class="parametername">crypto</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskIdentityManager.html">TlsPskIdentityManager</a></td>
+        <td><span class="parametername">pskIdentityManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_PskTlsServer_m_pskIdentityManager" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.PskTlsServer.m_pskIdentityManager">m_pskIdentityManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TlsPskIdentityManager m_pskIdentityManager</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskIdentityManager.html">TlsPskIdentityManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_PskTlsServer_GetCredentials_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.PskTlsServer.GetCredentials*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_PskTlsServer_GetCredentials" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.PskTlsServer.GetCredentials">GetCredentials()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsCredentials GetCredentials()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsCredentials.html">TlsCredentials</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetCredentials">AbstractTlsServer.GetCredentials()</a></div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_PskTlsServer_GetPskIdentityManager_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.PskTlsServer.GetPskIdentityManager*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_PskTlsServer_GetPskIdentityManager" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.PskTlsServer.GetPskIdentityManager">GetPskIdentityManager()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsPskIdentityManager GetPskIdentityManager()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskIdentityManager.html">TlsPskIdentityManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsServer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsServer_GetPskIdentityManager">AbstractTlsServer.GetPskIdentityManager()</a></div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_PskTlsServer_GetRsaEncryptionCredentials_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.PskTlsServer.GetRsaEncryptionCredentials*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_PskTlsServer_GetRsaEncryptionCredentials" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.PskTlsServer.GetRsaEncryptionCredentials">GetRsaEncryptionCredentials()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TlsCredentialedDecryptor GetRsaEncryptionCredentials()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsCredentialedDecryptor.html">TlsCredentialedDecryptor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_PskTlsServer_GetSupportedCipherSuites_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.PskTlsServer.GetSupportedCipherSuites*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_PskTlsServer_GetSupportedCipherSuites" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.PskTlsServer.GetSupportedCipherSuites">GetSupportedCipherSuites()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int[] GetSupportedCipherSuites()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_GetSupportedCipherSuites">AbstractTlsPeer.GetSupportedCipherSuites()</a></div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_PskTlsServer_GetSupportedVersions_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.PskTlsServer.GetSupportedVersions*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_PskTlsServer_GetSupportedVersions" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.PskTlsServer.GetSupportedVersions">GetSupportedVersions()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override ProtocolVersion[] GetSupportedVersions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsPeer.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsPeer_GetSupportedVersions">AbstractTlsPeer.GetSupportedVersions()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsServer.html">TlsServer</a>
+  </div>
+  <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPeer.html">TlsPeer</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

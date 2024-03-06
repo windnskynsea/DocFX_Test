@@ -1,0 +1,901 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class FastTlsBlockCipher
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class FastTlsBlockCipher
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher">
+
+
+  <h1 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher" class="text-break">Class FastTlsBlockCipher
+</h1>
+  <div class="markdown level0 summary"><p>A generic TLS 1.0-1.2 block cipher. This can be used for AES or 3DES for example.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">FastTlsBlockCipher</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.html">BestHTTP</a>.<a class="xref" href="BestHTTP.Connections.html">Connections</a>.<a class="xref" href="BestHTTP.Connections.TLS.html">TLS</a>.<a class="xref" href="BestHTTP.Connections.TLS.Crypto.html">Crypto</a>.<a class="xref" href="BestHTTP.Connections.TLS.Crypto.Impl.html">Impl</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FastTlsBlockCipher : TlsCipher</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher__ctor_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.#ctor*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher__ctor_TlsCryptoParameters_TlsBlockCipherImpl_TlsBlockCipherImpl_TlsHmac_TlsHmac_System_Int32_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.#ctor(TlsCryptoParameters,TlsBlockCipherImpl,TlsBlockCipherImpl,TlsHmac,TlsHmac,System.Int32)">FastTlsBlockCipher(TlsCryptoParameters, TlsBlockCipherImpl, TlsBlockCipherImpl, TlsHmac, TlsHmac, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FastTlsBlockCipher(TlsCryptoParameters cryptoParams, TlsBlockCipherImpl encryptCipher, TlsBlockCipherImpl decryptCipher, TlsHmac clientMac, TlsHmac serverMac, int cipherKeySize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsCryptoParameters</span></td>
+        <td><span class="parametername">cryptoParams</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TlsBlockCipherImpl</span></td>
+        <td><span class="parametername">encryptCipher</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TlsBlockCipherImpl</span></td>
+        <td><span class="parametername">decryptCipher</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TlsHmac</span></td>
+        <td><span class="parametername">clientMac</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TlsHmac</span></td>
+        <td><span class="parametername">serverMac</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">cipherKeySize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_m_acceptExtraPadding" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.m_acceptExtraPadding">m_acceptExtraPadding</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly bool m_acceptExtraPadding</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_m_cryptoParams" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.m_cryptoParams">m_cryptoParams</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TlsCryptoParameters m_cryptoParams</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsCryptoParameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_m_decryptCipher" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.m_decryptCipher">m_decryptCipher</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TlsBlockCipherImpl m_decryptCipher</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsBlockCipherImpl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_m_encryptCipher" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.m_encryptCipher">m_encryptCipher</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TlsBlockCipherImpl m_encryptCipher</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsBlockCipherImpl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_m_encryptThenMac" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.m_encryptThenMac">m_encryptThenMac</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly bool m_encryptThenMac</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_m_randomData" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.m_randomData">m_randomData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly byte[] m_randomData</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_m_readMac" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.m_readMac">m_readMac</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TlsSuiteMac m_readMac</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsSuiteMac</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_m_useExplicitIV" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.m_useExplicitIV">m_useExplicitIV</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly bool m_useExplicitIV</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_m_useExtraPadding" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.m_useExtraPadding">m_useExtraPadding</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly bool m_useExtraPadding</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_m_writeMac" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.m_writeMac">m_writeMac</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TlsSuiteMac m_writeMac</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsSuiteMac</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_UsesOpaqueRecordType_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.UsesOpaqueRecordType*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_UsesOpaqueRecordType" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.UsesOpaqueRecordType">UsesOpaqueRecordType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool UsesOpaqueRecordType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_CheckPaddingConstantTime_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.CheckPaddingConstantTime*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_CheckPaddingConstantTime_System_Byte___System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.CheckPaddingConstantTime(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)">CheckPaddingConstantTime(byte[], int, int, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int CheckPaddingConstantTime(byte[] buf, int off, int len, int blockSize, int macSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">off</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">len</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">blockSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">macSize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_ChooseExtraPadBlocks_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.ChooseExtraPadBlocks*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_ChooseExtraPadBlocks_System_Int32_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.ChooseExtraPadBlocks(System.Int32)">ChooseExtraPadBlocks(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int ChooseExtraPadBlocks(int max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">max</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_DecodeCiphertext_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.DecodeCiphertext*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_DecodeCiphertext_System_Int64_System_Int16_ProtocolVersion_System_Byte___System_Int32_System_Int32_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.DecodeCiphertext(System.Int64,System.Int16,ProtocolVersion,System.Byte[],System.Int32,System.Int32)">DecodeCiphertext(long, short, ProtocolVersion, byte[], int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TlsDecodeResult DecodeCiphertext(long seqNo, short recordType, ProtocolVersion recordVersion, byte[] ciphertext, int offset, int len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">seqNo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td><span class="parametername">recordType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ProtocolVersion</span></td>
+        <td><span class="parametername">recordVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">ciphertext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">len</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsDecodeResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_EncodePlaintext_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.EncodePlaintext*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_EncodePlaintext_System_Int64_System_Int16_ProtocolVersion_System_Int32_System_Byte___System_Int32_System_Int32_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.EncodePlaintext(System.Int64,System.Int16,ProtocolVersion,System.Int32,System.Byte[],System.Int32,System.Int32)">EncodePlaintext(long, short, ProtocolVersion, int, byte[], int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TlsEncodeResult EncodePlaintext(long seqNo, short contentType, ProtocolVersion recordVersion, int headerAllocation, byte[] plaintext, int offset, int len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">seqNo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td><span class="parametername">contentType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ProtocolVersion</span></td>
+        <td><span class="parametername">recordVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">headerAllocation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">plaintext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">len</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsEncodeResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_GetCiphertextDecodeLimit_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.GetCiphertextDecodeLimit*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_GetCiphertextDecodeLimit_System_Int32_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.GetCiphertextDecodeLimit(System.Int32)">GetCiphertextDecodeLimit(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetCiphertextDecodeLimit(int plaintextLimit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">plaintextLimit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_GetCiphertextEncodeLimit_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.GetCiphertextEncodeLimit*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_GetCiphertextEncodeLimit_System_Int32_System_Int32_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.GetCiphertextEncodeLimit(System.Int32,System.Int32)">GetCiphertextEncodeLimit(int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetCiphertextEncodeLimit(int plaintextLength, int plaintextLimit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">plaintextLength</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">plaintextLimit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_GetCiphertextLength_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.GetCiphertextLength*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_GetCiphertextLength_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.GetCiphertextLength(System.Int32,System.Int32,System.Int32,System.Int32)">GetCiphertextLength(int, int, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int GetCiphertextLength(int blockSize, int macSize, int maxPadding, int plaintextLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">blockSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">macSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">maxPadding</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">plaintextLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_GetPlaintextLimit_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.GetPlaintextLimit*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_GetPlaintextLimit_System_Int32_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.GetPlaintextLimit(System.Int32)">GetPlaintextLimit(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetPlaintextLimit(int ciphertextLimit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">ciphertextLimit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_RekeyDecoder_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.RekeyDecoder*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_RekeyDecoder" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.RekeyDecoder">RekeyDecoder()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RekeyDecoder()</code></pre>
+  </div>
+
+
+  <a id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_RekeyEncoder_" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.RekeyEncoder*"></a>
+  <h4 id="BestHTTP_Connections_TLS_Crypto_Impl_FastTlsBlockCipher_RekeyEncoder" data-uid="BestHTTP.Connections.TLS.Crypto.Impl.FastTlsBlockCipher.RekeyEncoder">RekeyEncoder()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RekeyEncoder()</code></pre>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

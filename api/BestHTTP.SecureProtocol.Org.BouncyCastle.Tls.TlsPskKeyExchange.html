@@ -1,0 +1,950 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class TlsPskKeyExchange
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class TlsPskKeyExchange
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange">
+
+
+  <h1 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange" class="text-break">Class TlsPskKeyExchange
+</h1>
+  <div class="markdown level0 summary"><p>(D)TLS PSK key exchange (RFC 4279).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html">AbstractTlsKeyExchange</a></div>
+    <div class="level2"><span class="xref">TlsPskKeyExchange</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsKeyExchange_m_keyExchange">AbstractTlsKeyExchange.m_keyExchange</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsKeyExchange_m_context">AbstractTlsKeyExchange.m_context</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsKeyExchange_Init_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsContext_">AbstractTlsKeyExchange.Init(TlsContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsKeyExchange_SkipServerKeyExchange">AbstractTlsKeyExchange.SkipServerKeyExchange()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsKeyExchange_GetClientCertificateTypes">AbstractTlsKeyExchange.GetClientCertificateTypes()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsKeyExchange_SkipClientCredentials">AbstractTlsKeyExchange.SkipClientCredentials()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsKeyExchange_ProcessClientCertificate_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_">AbstractTlsKeyExchange.ProcessClientCertificate(Certificate)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsKeyExchange_RequiresCertificateVerify">AbstractTlsKeyExchange.RequiresCertificateVerify</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.html">BestHTTP</a>.<span class="xref">SecureProtocol</span>.<span class="xref">Org</span>.<span class="xref">BouncyCastle</span>.<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.html">Tls</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TlsPskKeyExchange : AbstractTlsKeyExchange, TlsKeyExchange</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange__ctor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.#ctor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange__ctor_System_Int32_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskIdentity_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsDHGroupVerifier_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.#ctor(System.Int32,BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskIdentity,BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsDHGroupVerifier)">TlsPskKeyExchange(int, TlsPskIdentity, TlsDHGroupVerifier)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TlsPskKeyExchange(int keyExchange, TlsPskIdentity pskIdentity, TlsDHGroupVerifier dhGroupVerifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">keyExchange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskIdentity.html">TlsPskIdentity</a></td>
+        <td><span class="parametername">pskIdentity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsDHGroupVerifier.html">TlsDHGroupVerifier</a></td>
+        <td><span class="parametername">dhGroupVerifier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange__ctor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.#ctor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange__ctor_System_Int32_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskIdentityManager_TlsDHConfig_TlsECConfig_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.#ctor(System.Int32,BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskIdentityManager,TlsDHConfig,TlsECConfig)">TlsPskKeyExchange(int, TlsPskIdentityManager, TlsDHConfig, TlsECConfig)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TlsPskKeyExchange(int keyExchange, TlsPskIdentityManager pskIdentityManager, TlsDHConfig dhConfig, TlsECConfig ecConfig)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">keyExchange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskIdentityManager.html">TlsPskIdentityManager</a></td>
+        <td><span class="parametername">pskIdentityManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TlsDHConfig</span></td>
+        <td><span class="parametername">dhConfig</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TlsECConfig</span></td>
+        <td><span class="parametername">ecConfig</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_m_agreement" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.m_agreement">m_agreement</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TlsAgreement m_agreement</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsAgreement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_m_dhConfig" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.m_dhConfig">m_dhConfig</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TlsDHConfig m_dhConfig</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsDHConfig</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_m_dhGroupVerifier" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.m_dhGroupVerifier">m_dhGroupVerifier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TlsDHGroupVerifier m_dhGroupVerifier</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsDHGroupVerifier.html">TlsDHGroupVerifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_m_ecConfig" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.m_ecConfig">m_ecConfig</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TlsECConfig m_ecConfig</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsECConfig</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_m_preMasterSecret" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.m_preMasterSecret">m_preMasterSecret</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TlsSecret m_preMasterSecret</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsSecret</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_m_psk" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.m_psk">m_psk</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected byte[] m_psk</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_m_psk_identity_hint" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.m_psk_identity_hint">m_psk_identity_hint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected byte[] m_psk_identity_hint</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_m_pskIdentity" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.m_pskIdentity">m_pskIdentity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TlsPskIdentity m_pskIdentity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskIdentity.html">TlsPskIdentity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_m_pskIdentityManager" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.m_pskIdentityManager">m_pskIdentityManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TlsPskIdentityManager m_pskIdentityManager</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskIdentityManager.html">TlsPskIdentityManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_m_serverCredentials" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.m_serverCredentials">m_serverCredentials</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TlsCredentialedDecryptor m_serverCredentials</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsCredentialedDecryptor.html">TlsCredentialedDecryptor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_m_serverEncryptor" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.m_serverEncryptor">m_serverEncryptor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TlsEncryptor m_serverEncryptor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsEncryptor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_RequiresServerKeyExchange_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.RequiresServerKeyExchange*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_RequiresServerKeyExchange" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.RequiresServerKeyExchange">RequiresServerKeyExchange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool RequiresServerKeyExchange { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsKeyExchange_RequiresServerKeyExchange">AbstractTlsKeyExchange.RequiresServerKeyExchange</a></div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_GenerateClientKeyExchange_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.GenerateClientKeyExchange*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_GenerateClientKeyExchange_Stream_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.GenerateClientKeyExchange(Stream)">GenerateClientKeyExchange(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GenerateClientKeyExchange(Stream output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsKeyExchange_GenerateClientKeyExchange_Stream_">AbstractTlsKeyExchange.GenerateClientKeyExchange(Stream)</a></div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_GenerateEphemeralDH_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.GenerateEphemeralDH*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_GenerateEphemeralDH_Stream_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.GenerateEphemeralDH(Stream)">GenerateEphemeralDH(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateEphemeralDH(Stream output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_GenerateEphemeralECDH_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.GenerateEphemeralECDH*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_GenerateEphemeralECDH_Stream_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.GenerateEphemeralECDH(Stream)">GenerateEphemeralECDH(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateEphemeralECDH(Stream output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_GenerateOtherSecret_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.GenerateOtherSecret*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_GenerateOtherSecret_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.GenerateOtherSecret(System.Int32)">GenerateOtherSecret(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual byte[] GenerateOtherSecret(int pskLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">pskLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_GeneratePreMasterSecret_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.GeneratePreMasterSecret*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_GeneratePreMasterSecret" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.GeneratePreMasterSecret">GeneratePreMasterSecret()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TlsSecret GeneratePreMasterSecret()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TlsSecret</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsKeyExchange_GeneratePreMasterSecret">AbstractTlsKeyExchange.GeneratePreMasterSecret()</a></div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_GenerateServerKeyExchange_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.GenerateServerKeyExchange*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_GenerateServerKeyExchange" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.GenerateServerKeyExchange">GenerateServerKeyExchange()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override byte[] GenerateServerKeyExchange()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsKeyExchange_GenerateServerKeyExchange">AbstractTlsKeyExchange.GenerateServerKeyExchange()</a></div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_ProcessClientCredentials_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.ProcessClientCredentials*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_ProcessClientCredentials_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsCredentials_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.ProcessClientCredentials(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsCredentials)">ProcessClientCredentials(TlsCredentials)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ProcessClientCredentials(TlsCredentials clientCredentials)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsCredentials.html">TlsCredentials</a></td>
+        <td><span class="parametername">clientCredentials</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsKeyExchange_ProcessClientCredentials_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsCredentials_">AbstractTlsKeyExchange.ProcessClientCredentials(TlsCredentials)</a></div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_ProcessClientKeyExchange_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.ProcessClientKeyExchange*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_ProcessClientKeyExchange_Stream_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.ProcessClientKeyExchange(Stream)">ProcessClientKeyExchange(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ProcessClientKeyExchange(Stream input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsKeyExchange_ProcessClientKeyExchange_Stream_">AbstractTlsKeyExchange.ProcessClientKeyExchange(Stream)</a></div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_ProcessEphemeralDH_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.ProcessEphemeralDH*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_ProcessEphemeralDH_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.ProcessEphemeralDH(System.Byte[])">ProcessEphemeralDH(byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessEphemeralDH(byte[] y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_ProcessEphemeralECDH_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.ProcessEphemeralECDH*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_ProcessEphemeralECDH_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.ProcessEphemeralECDH(System.Byte[])">ProcessEphemeralECDH(byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessEphemeralECDH(byte[] point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_ProcessServerCertificate_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.ProcessServerCertificate*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_ProcessServerCertificate_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.ProcessServerCertificate(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate)">ProcessServerCertificate(Certificate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ProcessServerCertificate(Certificate serverCertificate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Certificate.html">Certificate</a></td>
+        <td><span class="parametername">serverCertificate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsKeyExchange_ProcessServerCertificate_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Certificate_">AbstractTlsKeyExchange.ProcessServerCertificate(Certificate)</a></div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_ProcessServerCredentials_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.ProcessServerCredentials*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_ProcessServerCredentials_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsCredentials_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.ProcessServerCredentials(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsCredentials)">ProcessServerCredentials(TlsCredentials)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ProcessServerCredentials(TlsCredentials serverCredentials)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsCredentials.html">TlsCredentials</a></td>
+        <td><span class="parametername">serverCredentials</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsKeyExchange_ProcessServerCredentials_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsCredentials_">AbstractTlsKeyExchange.ProcessServerCredentials(TlsCredentials)</a></div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_ProcessServerKeyExchange_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.ProcessServerKeyExchange*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_ProcessServerKeyExchange_Stream_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.ProcessServerKeyExchange(Stream)">ProcessServerKeyExchange(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ProcessServerKeyExchange(Stream input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsKeyExchange_ProcessServerKeyExchange_Stream_">AbstractTlsKeyExchange.ProcessServerKeyExchange(Stream)</a></div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_SkipServerCredentials_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.SkipServerCredentials*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_TlsPskKeyExchange_SkipServerCredentials" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsPskKeyExchange.SkipServerCredentials">SkipServerCredentials()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SkipServerCredentials()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.AbstractTlsKeyExchange.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_AbstractTlsKeyExchange_SkipServerCredentials">AbstractTlsKeyExchange.SkipServerCredentials()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.TlsKeyExchange.html">TlsKeyExchange</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

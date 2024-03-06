@@ -1,0 +1,1528 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface TlsCrypto
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface TlsCrypto
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto">
+
+
+  <h1 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto" class="text-break">Interface TlsCrypto
+</h1>
+  <div class="markdown level0 summary"><p>Service and object creation interface for the primitive types and services that are associated with
+cryptography in the API.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.html">BestHTTP</a>.<span class="xref">SecureProtocol</span>.<span class="xref">Org</span>.<span class="xref">BouncyCastle</span>.<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.html">Tls</a>.<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.html">Crypto</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface TlsCrypto</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_SecureRandom_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.SecureRandom*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_SecureRandom" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.SecureRandom">SecureRandom</h4>
+  <div class="markdown level1 summary"><p>Return the primary (safest) SecureRandom for this crypto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">SecureRandom SecureRandom { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SecureRandom</span></td>
+        <td><p>a SecureRandom suitable for key generation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_AdoptSecret_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.AdoptSecret*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_AdoptSecret_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsSecret_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.AdoptSecret(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsSecret)">AdoptSecret(TlsSecret)</h4>
+  <div class="markdown level1 summary"><p>Adopt the passed in secret, creating a new copy of it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsSecret AdoptSecret(TlsSecret secret)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></td>
+        <td><span class="parametername">secret</span></td>
+        <td><p>the secret to make a copy of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></td>
+        <td><p>a TlsSecret based on the original secret.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateCertificate_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateCertificate*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateCertificate_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateCertificate(System.Byte[])">CreateCertificate(byte[])</h4>
+  <div class="markdown level1 summary"><p>Create a TlsCertificate from an ASN.1 binary encoding of an X.509 certificate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsCertificate CreateCertificate(byte[] encoding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>DER/BER encoding of the certificate of interest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCertificate.html">TlsCertificate</a></td>
+        <td><p>a TlsCertificate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateCertificate_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateCertificate*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateCertificate_System_Int16_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateCertificate(System.Int16,System.Byte[])">CreateCertificate(short, byte[])</h4>
+  <div class="markdown level1 summary"><p>Create a TlsCertificate from an ASN.1 binary encoding of a certificate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsCertificate CreateCertificate(short type, byte[] encoding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Certificate type as per IANA TLS Certificate Types registry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>DER/BER encoding of the certificate of interest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCertificate.html">TlsCertificate</a></td>
+        <td><p>a TlsCertificate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateCipher_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateCipher*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateCipher_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCryptoParameters_System_Int32_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateCipher(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters,System.Int32,System.Int32)">CreateCipher(TlsCryptoParameters, int, int)</h4>
+  <div class="markdown level1 summary"><p>Create a cipher for the specified encryption and MAC algorithms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsCipher CreateCipher(TlsCryptoParameters cryptoParams, int encryptionAlgorithm, int macAlgorithm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCryptoParameters.html">TlsCryptoParameters</a></td>
+        <td><span class="parametername">cryptoParams</span></td>
+        <td><p>context specific parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">encryptionAlgorithm</span></td>
+        <td><p>the encryption algorithm to be employed by the cipher.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">macAlgorithm</span></td>
+        <td><p>the MAC algorithm to be employed by the cipher.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCipher.html">TlsCipher</a></td>
+        <td><p>a <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCipher.html">TlsCipher</a> implementing the encryption and MAC algorithms.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateCipher_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCryptoParameters_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See enumeration classes <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.EncryptionAlgorithm.html">EncryptionAlgorithm</a>, <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.MacAlgorithm.html">MacAlgorithm</a> for appropriate
+argument values.</p>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateDHDomain_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateDHDomain*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateDHDomain_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsDHConfig_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateDHDomain(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsDHConfig)">CreateDHDomain(TlsDHConfig)</h4>
+  <div class="markdown level1 summary"><p>Create a domain object supporting the domain parameters described in dhConfig.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsDHDomain CreateDHDomain(TlsDHConfig dhConfig)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsDHConfig.html">TlsDHConfig</a></td>
+        <td><span class="parametername">dhConfig</span></td>
+        <td><p>the config describing the DH parameters to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsDHDomain.html">TlsDHDomain</a></td>
+        <td><p>a TlsDHDomain supporting the parameters in dhConfig.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateECDomain_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateECDomain*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateECDomain_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsECConfig_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateECDomain(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsECConfig)">CreateECDomain(TlsECConfig)</h4>
+  <div class="markdown level1 summary"><p>Create a domain object supporting the domain parameters described in ecConfig.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsECDomain CreateECDomain(TlsECConfig ecConfig)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsECConfig.html">TlsECConfig</a></td>
+        <td><span class="parametername">ecConfig</span></td>
+        <td><p>the config describing the EC parameters to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsECDomain.html">TlsECDomain</a></td>
+        <td><p>a TlsECDomain supporting the parameters in ecConfig.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateHash_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateHash*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateHash_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateHash(System.Int32)">CreateHash(int)</h4>
+  <div class="markdown level1 summary"><p>Create a suitable hash for the hash algorithm identifier passed in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsHash CreateHash(int cryptoHashAlgorithm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">cryptoHashAlgorithm</span></td>
+        <td><p>the hash algorithm the hash needs to implement.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsHash.html">TlsHash</a></td>
+        <td><p>a <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsHash.html">TlsHash</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateHash_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See enumeration class <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.CryptoHashAlgorithm.html">CryptoHashAlgorithm</a> for appropriate argument values.</p>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateHmac_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateHmac*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateHmac_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateHmac(System.Int32)">CreateHmac(int)</h4>
+  <div class="markdown level1 summary"><p>Create a suitable HMAC for the MAC algorithm identifier passed in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsHmac CreateHmac(int macAlgorithm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">macAlgorithm</span></td>
+        <td><p>the MAC algorithm the HMAC needs to match.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsHmac.html">TlsHmac</a></td>
+        <td><p>a <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsHmac.html">TlsHmac</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateHmac_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See enumeration class <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.MacAlgorithm.html">MacAlgorithm</a> for appropriate argument values.</p>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateHmacForHash_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateHmacForHash*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateHmacForHash_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateHmacForHash(System.Int32)">CreateHmacForHash(int)</h4>
+  <div class="markdown level1 summary"><p>Create a suitable HMAC using the hash algorithm identifier passed in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsHmac CreateHmacForHash(int cryptoHashAlgorithm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">cryptoHashAlgorithm</span></td>
+        <td><p>the hash algorithm the HMAC should use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsHmac.html">TlsHmac</a></td>
+        <td><p>a <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsHmac.html">TlsHmac</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateHmacForHash_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See enumeration class <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.CryptoHashAlgorithm.html">CryptoHashAlgorithm</a> for appropriate argument values.</p>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateNonceGenerator_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateNonceGenerator*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateNonceGenerator_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateNonceGenerator(System.Byte[])">CreateNonceGenerator(byte[])</h4>
+  <div class="markdown level1 summary"><p>Create a nonce generator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsNonceGenerator CreateNonceGenerator(byte[] additionalSeedMaterial)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">additionalSeedMaterial</span></td>
+        <td><p>context-specific seed material</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsNonceGenerator.html">TlsNonceGenerator</a></td>
+        <td><p>a <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsNonceGenerator.html">TlsNonceGenerator</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateNonceGenerator_System_Byte____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Each call should construct a new generator, and the generator should be returned from this call only after
+automatically seeding from this <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.html">TlsCrypto</a>'s entropy source, and from the provided additional
+seed material. The output of each returned generator must be completely independent of the others.</p>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateSecret_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateSecret*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateSecret_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateSecret(System.Byte[])">CreateSecret(byte[])</h4>
+  <div class="markdown level1 summary"><p>Create a TlsSecret object based on provided data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsSecret CreateSecret(byte[] data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the data to base the TlsSecret on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></td>
+        <td><p>a TlsSecret based on the provided data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateSrp6Client_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateSrp6Client*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateSrp6Client_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsSrpConfig_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateSrp6Client(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsSrpConfig)">CreateSrp6Client(TlsSrpConfig)</h4>
+  <div class="markdown level1 summary"><p>Create an SRP-6 client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsSrp6Client CreateSrp6Client(TlsSrpConfig srpConfig)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsSrpConfig.html">TlsSrpConfig</a></td>
+        <td><span class="parametername">srpConfig</span></td>
+        <td><p>client config.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsSrp6Client.html">TlsSrp6Client</a></td>
+        <td><p>an initialised SRP6 client object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateSrp6Server_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateSrp6Server*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateSrp6Server_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsSrpConfig_BigInteger_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateSrp6Server(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsSrpConfig,BigInteger)">CreateSrp6Server(TlsSrpConfig, BigInteger)</h4>
+  <div class="markdown level1 summary"><p>Create an SRP-6 server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsSrp6Server CreateSrp6Server(TlsSrpConfig srpConfig, BigInteger srpVerifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsSrpConfig.html">TlsSrpConfig</a></td>
+        <td><span class="parametername">srpConfig</span></td>
+        <td><p>server config.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">BigInteger</span></td>
+        <td><span class="parametername">srpVerifier</span></td>
+        <td><p>the SRP6 verifier value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsSrp6Server.html">TlsSrp6Server</a></td>
+        <td><p>an initialised SRP6 server object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateSrp6VerifierGenerator_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateSrp6VerifierGenerator*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_CreateSrp6VerifierGenerator_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsSrpConfig_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.CreateSrp6VerifierGenerator(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsSrpConfig)">CreateSrp6VerifierGenerator(TlsSrpConfig)</h4>
+  <div class="markdown level1 summary"><p>Create an SRP-6 verifier generator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsSrp6VerifierGenerator CreateSrp6VerifierGenerator(TlsSrpConfig srpConfig)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsSrpConfig.html">TlsSrpConfig</a></td>
+        <td><span class="parametername">srpConfig</span></td>
+        <td><p>generator config.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsSrp6VerifierGenerator.html">TlsSrp6VerifierGenerator</a></td>
+        <td><p>an initialized SRP6 verifier generator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_GenerateRsaPreMasterSecret_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.GenerateRsaPreMasterSecret*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_GenerateRsaPreMasterSecret_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_ProtocolVersion_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.GenerateRsaPreMasterSecret(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.ProtocolVersion)">GenerateRsaPreMasterSecret(ProtocolVersion)</h4>
+  <div class="markdown level1 summary"><p>Create a TlsSecret object containing a randomly-generated RSA PreMasterSecret</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsSecret GenerateRsaPreMasterSecret(ProtocolVersion clientVersion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.ProtocolVersion.html">ProtocolVersion</a></td>
+        <td><span class="parametername">clientVersion</span></td>
+        <td><p>the client version to place in the first 2 bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></td>
+        <td><p>a TlsSecret containing the PreMasterSecret.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasAnyStreamVerifiers_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasAnyStreamVerifiers*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasAnyStreamVerifiers_System_Collections_Generic_IList_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_SignatureAndHashAlgorithm__" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasAnyStreamVerifiers(System.Collections.Generic.IList{BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.SignatureAndHashAlgorithm})">HasAnyStreamVerifiers(IList&lt;SignatureAndHashAlgorithm&gt;)</h4>
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto would use a stream verifier for any of the passed in algorithms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasAnyStreamVerifiers(IList&lt;SignatureAndHashAlgorithm&gt; signatureAndHashAlgorithms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList&lt;T&gt;</span>&lt;<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.SignatureAndHashAlgorithm.html">SignatureAndHashAlgorithm</a>&gt;</td>
+        <td><span class="parametername">signatureAndHashAlgorithms</span></td>
+        <td><p>A <span class="xref">System.Collections.Generic.IList&lt;T&gt;</span> of
+<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.SignatureAndHashAlgorithm.html">SignatureAndHashAlgorithm</a> values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>true if this instance would use a stream verifier for any of the passed in algorithms, otherwise
+false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasAnyStreamVerifiers_System_Collections_Generic_IList_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_SignatureAndHashAlgorithm___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is only relevant to handshakes negotiating (D)TLS 1.2.</p>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasAnyStreamVerifiersLegacy_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasAnyStreamVerifiersLegacy*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasAnyStreamVerifiersLegacy_System_Int16___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasAnyStreamVerifiersLegacy(System.Int16[])">HasAnyStreamVerifiersLegacy(short[])</h4>
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto would use a stream verifier for any of the passed in algorithms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasAnyStreamVerifiersLegacy(short[] clientCertificateTypes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">short</span>[]</td>
+        <td><span class="parametername">clientCertificateTypes</span></td>
+        <td><p>An array of <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.ClientCertificateType.html">ClientCertificateType</a> values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>true if this instance would use a stream verifier for any of the passed in algorithms, otherwise
+false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasAnyStreamVerifiersLegacy_System_Int16____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is only relevant to handshakes negotiating (D)TLS versions older than 1.2.</p>
+</div>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasCryptoHashAlgorithm_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasCryptoHashAlgorithm*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasCryptoHashAlgorithm_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasCryptoHashAlgorithm(System.Int32)">HasCryptoHashAlgorithm(int)</h4>
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support the passed in hash algorithm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasCryptoHashAlgorithm(int cryptoHashAlgorithm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">cryptoHashAlgorithm</span></td>
+        <td><p>the algorithm of interest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>true if cryptoHashAlgorithm is supported, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasCryptoSignatureAlgorithm_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasCryptoSignatureAlgorithm*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasCryptoSignatureAlgorithm_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasCryptoSignatureAlgorithm(System.Int32)">HasCryptoSignatureAlgorithm(int)</h4>
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support the passed in signature algorithm (not necessarily in
+combination with EVERY hash algorithm).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasCryptoSignatureAlgorithm(int cryptoSignatureAlgorithm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">cryptoSignatureAlgorithm</span></td>
+        <td><p>the algorithm of interest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>true if cryptoSignatureAlgorithm is supported, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasDHAgreement_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasDHAgreement*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasDHAgreement" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasDHAgreement">HasDHAgreement()</h4>
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support DH key agreement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasDHAgreement()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>true if this instance can support DH key agreement, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasECDHAgreement_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasECDHAgreement*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasECDHAgreement" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasECDHAgreement">HasECDHAgreement()</h4>
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support ECDH key agreement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasECDHAgreement()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>true if this instance can support ECDH key agreement, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasEncryptionAlgorithm_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasEncryptionAlgorithm*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasEncryptionAlgorithm_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasEncryptionAlgorithm(System.Int32)">HasEncryptionAlgorithm(int)</h4>
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support the passed in block/stream encryption algorithm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasEncryptionAlgorithm(int encryptionAlgorithm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">encryptionAlgorithm</span></td>
+        <td><p>the algorithm of interest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>true if encryptionAlgorithm is supported, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasHkdfAlgorithm_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasHkdfAlgorithm*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasHkdfAlgorithm_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasHkdfAlgorithm(System.Int32)">HasHkdfAlgorithm(int)</h4>
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support HKDF with the passed in hash algorithm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasHkdfAlgorithm(int cryptoHashAlgorithm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">cryptoHashAlgorithm</span></td>
+        <td><p>the algorithm of interest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>true if HKDF is supported with cryptoHashAlgorithm, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasMacAlgorithm_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasMacAlgorithm*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasMacAlgorithm_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasMacAlgorithm(System.Int32)">HasMacAlgorithm(int)</h4>
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support the passed in MAC algorithm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasMacAlgorithm(int macAlgorithm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">macAlgorithm</span></td>
+        <td><p>the algorithm of interest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>true if macAlgorithm is supported, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasNamedGroup_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasNamedGroup*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasNamedGroup_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasNamedGroup(System.Int32)">HasNamedGroup(int)</h4>
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto supports the passed in <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.NamedGroup.html">named group</a>
+value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasNamedGroup(int namedGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">namedGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>true if this instance supports the passed in <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.NamedGroup.html">named group</a> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasRsaEncryption_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasRsaEncryption*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasRsaEncryption" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasRsaEncryption">HasRsaEncryption()</h4>
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support RSA encryption/decryption.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasRsaEncryption()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>true if this instance can support RSA encryption/decryption, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasSignatureAlgorithm_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasSignatureAlgorithm*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasSignatureAlgorithm_System_Int16_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasSignatureAlgorithm(System.Int16)">HasSignatureAlgorithm(short)</h4>
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support the passed in signature algorithm (not necessarily in
+combination with EVERY hash algorithm).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasSignatureAlgorithm(short signatureAlgorithm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td><span class="parametername">signatureAlgorithm</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>true if signatureAlgorithm is supported, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasSignatureAndHashAlgorithm_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasSignatureAndHashAlgorithm*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasSignatureAndHashAlgorithm_BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_SignatureAndHashAlgorithm_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasSignatureAndHashAlgorithm(BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.SignatureAndHashAlgorithm)">HasSignatureAndHashAlgorithm(SignatureAndHashAlgorithm)</h4>
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support the passed in signature algorithm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasSignatureAndHashAlgorithm(SignatureAndHashAlgorithm sigAndHashAlgorithm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.SignatureAndHashAlgorithm.html">SignatureAndHashAlgorithm</a></td>
+        <td><span class="parametername">sigAndHashAlgorithm</span></td>
+        <td><p>the algorithm of interest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>true if sigAndHashAlgorithm is supported, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasSignatureScheme_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasSignatureScheme*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasSignatureScheme_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasSignatureScheme(System.Int32)">HasSignatureScheme(int)</h4>
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support the passed in signature scheme.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasSignatureScheme(int signatureScheme)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">signatureScheme</span></td>
+        <td><p>the scheme of interest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>true if signatureScheme is supported, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasSrpAuthentication_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasSrpAuthentication*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HasSrpAuthentication" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HasSrpAuthentication">HasSrpAuthentication()</h4>
+  <div class="markdown level1 summary"><p>Return true if this TlsCrypto can support SRP authentication.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasSrpAuthentication()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>true if this instance can support SRP authentication, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HkdfInit_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HkdfInit*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Tls_Crypto_TlsCrypto_HkdfInit_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsCrypto.HkdfInit(System.Int32)">HkdfInit(int)</h4>
+  <div class="markdown level1 summary"><p>Setup an initial &quot;secret&quot; for a chain of HKDF calls (RFC 5869), containing a string of HashLen
+zeroes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TlsSecret HkdfInit(int cryptoHashAlgorithm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">cryptoHashAlgorithm</span></td>
+        <td><p>the hash algorithm to instantiate HMAC with. See
+<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.CryptoHashAlgorithm.html">CryptoHashAlgorithm</a> for values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Tls.Crypto.TlsSecret.html">TlsSecret</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
